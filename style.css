@@ -239,11 +239,17 @@ h4.img-txt {
 }
 
 .container-item {
-    background-color: wheat;    
-    text-align: center;
-    width: 7em;
-    height: 7em;
+    background-color: var(--letter-blue);
+    width: 100%;
+    height: auto;
+    border-radius: .6em;    
+}
 
+.container-item p, .container-item h2 {    
+    color: var(--bgr-gray);
+    font-size: 1.3em;
+    padding: .5em;
+    text-align: center;
 }
 
 
