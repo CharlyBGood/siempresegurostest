@@ -201,11 +201,11 @@ h4.img-txt {
     flex-direction: column;
     align-items: center;
     /* width: 95%; */
-    margin: .3em auto;
+    margin: 0 auto;
     background-color: var(--bgr-gray);
     opacity: .9;
     padding: 1em;
-    border-radius: .5em;    
+    /* border-radius: .5em;    */
 }
 
 .welcome-section h3 {
@@ -282,7 +282,7 @@ h4.img-txt {
     height: auto;
     margin: 0 auto;
     background-color: var(--bgr-gray);
-    border-radius: .5em;
+    /* border-radius: .5em; */
     opacity: .9;    
     padding: 1em;
 }
@@ -352,7 +352,7 @@ h4.img-txt {
     }
 
     .img-container {
-        margin-top: 23.2vh;
+        margin-top: 24vmin;
     }
 
     /* slideshow content */
