@@ -343,15 +343,16 @@ h4.img-txt {
     }
 
     .header-logo {
-        width: 8em;
+        width: 19vw;
+        padding: 0;
     }
     
     .header-logo-name {
-        width: 11em;
+        width: 25vw;
     }
 
     .img-container {
-        margin-top: 8.4em;
+        margin-top: 23.2vh;
     }
 
     /* slideshow content */
