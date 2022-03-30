@@ -1,7 +1,8 @@
 :root {
     --letter-blue: #253878;
     --letter-gray: #7a7a7a;
-    --bgr-gray: #8c8e8f;
+    /* --bgr-gray: #8c8e8f; */
+    --bgr-gray: #03070F;
     --blgray: #d3dde6;
 }
 
@@ -12,9 +13,9 @@
 }
 
 html {
-    background-color: #212121;
-    background: url("./img/rascacielos.png") no-repeat center center fixed;
-    background-size: cover;
+    background-color: var(--letter-blue);
+    /* background: url("./img/rascacielos.png") no-repeat center center fixed;
+    background-size: cover; */
 }
 
 
@@ -25,7 +26,7 @@ body, ::after, ::before {
     height: auto;
     font-family: 'Federo', sans-serif;
     font-size: 15px;
-    color: var(--letter-blue);
+    color: var(--blgray);
 }
 
 .hero {
@@ -61,7 +62,7 @@ body, ::after, ::before {
 }
 
 .navbar a:hover {
-    color: var(--blgray);
+    color: var(--letter-gray);
 }
 
 .navbar-container {
@@ -105,12 +106,12 @@ body, ::after, ::before {
     border-radius: 3em;
 } */
 
-.navbar_toggle svg {
-    
+.navbar_toggle svg {    
     width: 100%;
     font-size: 2.1em;    
     background-color: var(--bgr-gray);
-    color: var(--letter-blue);
+    color: var(--blgray);
+    border: 1px solid var(--letter-blue);
     border-radius: 3em;
 }
 
@@ -164,11 +165,12 @@ body, ::after, ::before {
 h4.img-txt {
     width: 60%;
     top: 35%;
-    left: 20%;
+    left: 24%;
     padding: .5em;
     color: var(--blgray);
     cursor: none;
-    font-size: 3em;
+    /* font-size: 3em; */
+    font-size: 4vw;
 }
 
 .text-bgr {
@@ -203,7 +205,7 @@ h4.img-txt {
     background-color: var(--bgr-gray);
     opacity: .9;
     padding: 1em;
-    border-radius: .5em;
+    border-radius: .5em;    
 }
 
 .welcome-section h3 {
@@ -227,6 +229,7 @@ h4.img-txt {
     background-position: center;
     position: relative;
     text-align: center;
+    color: var(--bgr-gray);
 }
 
 .description-container {
@@ -336,8 +339,7 @@ h4.img-txt {
     .nav-container-2.active a:hover {
         background-color: var(--letter-blue);
         opacity: .6;
-        color: var(--blgray);
-        
+        color: var(--blgray);        
     }
 
     .header-logo {
@@ -358,9 +360,14 @@ h4.img-txt {
     }
     
     h4.img-txt {
-        font-size: 2em;
-        top: 35%;
+        /* font-size: 6vmin; */
+        top: 30%;
+        left: 22%;
     }
+
+    /* .description-container {
+        grid-template-columns: auto;
+    } */
 
 
 }
