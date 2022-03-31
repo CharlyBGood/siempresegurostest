@@ -1,5 +1,5 @@
 :root {
-    --letter-blue: #253878;
+    --bgr-blue: #253878;
     --letter-gray: #7a7a7a;
     /* --bgr-gray: #8c8e8f; */
     --bgr-gray: #03070F;
@@ -13,7 +13,7 @@
 }
 
 html {
-    background-color: var(--letter-blue);
+    background-color: var(--bgr-blue);
     /* background: url("./img/rascacielos.png") no-repeat center center fixed;
     background-size: cover; */
 }
@@ -51,7 +51,7 @@ body, ::after, ::before {
     top: 0;
     position: fixed;
     z-index: 1;
-    border-radius: .3em;
+    /* border-radius: .3em; */
 }
 
 .navbar a {
@@ -79,7 +79,7 @@ body, ::after, ::before {
 
 .nav-container-2 {
     gap: .7em;
-    padding: 1em;
+    padding: .5em;
     font-weight: bold;    
     justify-content: space-around;    
 }
@@ -102,7 +102,7 @@ body, ::after, ::before {
     width: 100%;
     font-size: 1.5em;    
     background-color: var(--bgr-gray);
-    color: var(--letter-blue);
+    color: var(--bgr-blue);
     border-radius: 3em;
 } */
 
@@ -111,7 +111,7 @@ body, ::after, ::before {
     font-size: 2.1em;    
     background-color: var(--bgr-gray);
     color: var(--blgray);
-    border: 1px solid var(--letter-blue);
+    /* border: 1px solid var(--bgr-blue); */
     border-radius: 3em;
 }
 
@@ -130,17 +130,30 @@ body, ::after, ::before {
 .img-container {
     width: 100%;
     position: relative;
-    margin-top: 10em;
-    border-radius: .5em;
+    margin-top: 23vmin;
+    /* border-radius: .5em; */
 }
 
 
 .img-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
-    border-radius: .5em;
+    /* border-radius: .5em; */
 }
+
+/* SLIDESHOW */
+
+[data-component="slideshow"] .slide {
+    display: none;
+}
+
+[data-component="slideshow"] .slide.active {
+    display: block;
+}
+
+
+/* arrows */
 
 .arrow-prev, .arrow-next, .img-txt {
     color: var(--blgray);
@@ -175,7 +188,7 @@ h4.img-txt {
 
 .text-bgr {
     position: absolute;
-    background-color: var(--letter-blue);
+    background-color: var(--bgr-blue);
     width: 100%;
     height: 100%;
     top: 0;
@@ -183,7 +196,7 @@ h4.img-txt {
     left: 0;
     right: 0;
     opacity: .5;
-    border-radius: .5em;
+    /* border-radius: .5em; */
 }
 
 /* .text-bgr h4 {    
@@ -242,10 +255,10 @@ h4.img-txt {
 }
 
 .container-item {
-    background-color: var(--letter-blue);
+    background-color: var(--bgr-blue);
     width: 100%;
     height: auto;
-    border-radius: .6em;    
+    border-radius: .6em;
 }
 
 .container-item p, .container-item h2 {    
@@ -337,7 +350,7 @@ h4.img-txt {
     }
 
     .nav-container-2.active a:hover {
-        background-color: var(--letter-blue);
+        background-color: var(--bgr-blue);
         opacity: .6;
         color: var(--blgray);        
     }
@@ -350,11 +363,7 @@ h4.img-txt {
     .header-logo-name {
         width: 25vw;
     }
-
-    .img-container {
-        margin-top: 24vmin;
-    }
-
+    
     /* slideshow content */
     .arrow-prev, .arrow-next {
         font-size: 2em;        
