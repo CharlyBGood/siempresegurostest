@@ -63,7 +63,8 @@ body, ::after, ::before {
 }
 
 .navbar a:hover {
-    color: var(--letter-gray);
+    /* color: var(--letter-gray); */
+    color: goldenrod;
 }
 
 .navbar-container {
@@ -230,8 +231,8 @@ h4.img-txt {
 }
 
 .welcome-section h2, .welcome-section p {
-    width: 100%;
-    align-self: center;
+    width: 65%;
+    text-align: center;    
     font-size: 1.5em;
     /* margin: .5em; */
     padding: 1em;
@@ -304,9 +305,9 @@ h4.img-txt {
 }
 
 .support-container h2, .support-container p {    
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
-    font-size: 1.3em;
+    font-size: 1.5em;
     padding: 1em;
     text-align: center;
 }
@@ -389,7 +390,8 @@ h4.img-txt {
     .nav-container-2.active a:hover {
         background-color: var(--bgr-blue);
         opacity: .6;
-        color: var(--blgray);        
+        /* color: var(--blgray); */
+        color: gold;
     }
 
     .header-logo {
@@ -421,6 +423,16 @@ h4.img-txt {
     .footer-span span {
         font-size: 3.1vw;
     }
+
+    .welcome-section p, .welcome-section h2,
+     .support-container h2, .support-container p {
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    /* .img-prefooter {
+        width: 100vmax;
+    } */
 
 
 }
