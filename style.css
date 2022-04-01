@@ -35,6 +35,7 @@ body, ::after, ::before {
     /* justify-content: space-around; */
     align-items: center;
     width: 100%;
+    height: 100vh;
     top: 0;
     
 }
@@ -176,14 +177,14 @@ body, ::after, ::before {
 }
 
 h4.img-txt {
-    width: 60%;
-    top: 35%;
-    left: 24%;
+    width: 65%;
+    top: 37%;
+    left: 23%;
     padding: .5em;
     color: var(--blgray);
-    cursor: none;
-    /* font-size: 3em; */
-    font-size: 4vw;
+    cursor: none;    
+    font-size: 3.1vw;
+    text-shadow: 2px 2px 2px var(--bgr-gray);
 }
 
 .text-bgr {
@@ -213,11 +214,11 @@ h4.img-txt {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 95%; */
+    width: 100%;
     margin: 0 auto;
     background-color: var(--bgr-gray);
     opacity: .9;
-    padding: 1em;
+    /* padding: 1em; */
     /* border-radius: .5em;    */
 }
 
@@ -229,10 +230,11 @@ h4.img-txt {
 }
 
 .welcome-section h2, .welcome-section p {
-    width: 85%;
+    width: 100%;
     align-self: center;
     font-size: 1.5em;
-    margin: .5em;
+    /* margin: .5em; */
+    padding: 1em;
 }
 
 .about-container {
@@ -291,6 +293,8 @@ h4.img-txt {
 }
 
 .support-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -299,12 +303,11 @@ h4.img-txt {
     opacity: .9;
 }
 
-.support-container h2, .support-container p {
-    width: 75%;
+.support-container h2, .support-container p {    
+    width: 80%;
     margin: 0 auto;
     font-size: 1.3em;
-    font-weight: bold;
-    padding: 1.5em;
+    padding: 1em;
     text-align: center;
 }
 
@@ -337,7 +340,11 @@ h4.img-txt {
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 850px) {    
+@media screen and (max-width: 850px) {
+
+    .hero {
+        height: auto;
+    }
 
     /* responsive navbar */
     .navbar {
@@ -401,8 +408,8 @@ h4.img-txt {
     
     h4.img-txt {
         /* font-size: 6vmin; */
-        top: 30%;
-        left: 22%;
+        /* top: 30%; */
+        left: 21%;
     }
 
     /* .description-container {
