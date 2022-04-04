@@ -239,18 +239,18 @@ h4.img-txt {
 }
 
 .about-container {
-    background-image: url('./img/finger.png');
+    background: url('./img/fishing.png') center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     position: relative;
     text-align: center;
-    color: var(--bgr-gray);
-    text-shadow: 2px 2px 2px var(--blgray);
+    color: var(--bgr-gray) ;
+    text-shadow: 1px 1px var(--blgray);
 }
 
 .description-container {
-    background: url("./img/rascacielos.png") no-repeat center center fixed;
+    background: url("./img/build.png") no-repeat center center fixed;
     background-size: cover;
     display: grid;
     gap: 1em;
@@ -262,10 +262,10 @@ h4.img-txt {
 }
 
 .container-item {
-    background-color: var(--blgray);
+    background: url('./img/fishing.png');
     width: 100%;
     height: auto;
-    border-radius: .3em;
+    border-radius: 5%;
     opacity: .8;
     
 }
@@ -396,8 +396,7 @@ h4.img-txt {
     .nav-container-2.active a:hover {
         background-color: var(--bgr-blue);
         opacity: .6;
-        /* color: var(--blgray); */
-        color: gold;
+        color: var(--blgray);        
     }
 
     .header-logo {
