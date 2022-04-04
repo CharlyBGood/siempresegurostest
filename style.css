@@ -23,19 +23,18 @@ body, ::after, ::before {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
     font-family: 'Federo', sans-serif;
     font-size: 15px;
     color: var(--blgray);
 }
 
 .hero {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: center;
+    align-items: center; */
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     top: 0;
     
 }
@@ -132,14 +131,14 @@ body, ::after, ::before {
 .img-container {
     width: 100%;
     position: relative;
-    margin-top: 23vmin;
+    margin-top: 21vmin;
     /* border-radius: .5em; */
 }
 
 
 .img-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     /* border-radius: .5em; */
 }
@@ -244,9 +243,18 @@ h4.img-txt {
     background-size: cover;
     background-position: right;
     position: relative;
+    
+}
+
+.about-img-container h1 {
+    font-size: 3vw;
     text-align: center;
     color: var(--bgr-gray) ;
     text-shadow: 1px 1px var(--blgray);
+    background: var(--bgr-gray);
+    padding: 0.5em;
+    border-radius: 0.3em;
+    opacity: .8;
 }
 
 .description-container {
@@ -262,7 +270,8 @@ h4.img-txt {
 }
 
 .container-item {
-    background: url('./img/fishing.png');
+    /* background: url('./img/fishing.png'); */
+    background-color: var(--bgr-gray);
     width: 100%;
     height: auto;
     border-radius: 5%;
@@ -271,7 +280,7 @@ h4.img-txt {
 }
 
 .container-item p, .container-item h2 {    
-    color: var(--bgr-gray);
+    color: var(--blgray) ;
     font-size: 2vw;
     padding: .5em;
     text-align: center;
