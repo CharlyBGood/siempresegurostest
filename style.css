@@ -63,23 +63,23 @@ body, ::after, ::before {
 }
 
 .navbar a:hover {
-    /* color: var(--letter-gray); */
-    color: goldenrod;
+    color: var(--letter-gray);
 }
 
 .navbar-container {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .nav-container-1 {    
     justify-content: center;
     gap: 1em;
-    
+    flex: 2;
 }
 
 .nav-container-2 {
+    flex: 2;
     gap: .7em;
     padding: .5em;
     font-weight: bold;    
@@ -246,27 +246,33 @@ h4.img-txt {
     position: relative;
     text-align: center;
     color: var(--bgr-gray);
+    text-shadow: 2px 2px 2px var(--blgray);
 }
 
 .description-container {
+    background: url("./img/rascacielos.png") no-repeat center center fixed;
+    background-size: cover;
     display: grid;
     gap: 1em;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(14vw, 1fr));
     justify-content: space-evenly;
-    width: 80%;
-    margin: .5em auto;
+    width: 100%;
+    margin: auto;
+    padding: 1em;
 }
 
 .container-item {
-    background-color: var(--bgr-blue);
+    background-color: var(--blgray);
     width: 100%;
     height: auto;
-    border-radius: .6em;
+    border-radius: .3em;
+    opacity: .8;
+    
 }
 
 .container-item p, .container-item h2 {    
     color: var(--bgr-gray);
-    font-size: 1.3em;
+    font-size: 2vw;
     padding: .5em;
     text-align: center;
 }
