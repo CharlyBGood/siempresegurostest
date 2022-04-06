@@ -6,6 +6,8 @@ toggleBtn.addEventListener('click', ()=> {
     console.log('workddddssss')    
 })
 
+// slideshow
+
 let slideshows = document.querySelectorAll('[data-component="slideshow"]');
 
 slideshows.forEach(initSlideShow);
@@ -25,4 +27,29 @@ function initSlideShow(slideshow) {
 
         slides[index].classList.add('active');
     }, time);
+}
+
+// modal container
+
+let weAre = document.getElementById('quienes-somos');
+
+weAre.addEventListener('click', modalPageOne);
+
+let modalOne = document.getElementById('myModalOne');
+
+let span = document.getElementsByClassName('close')[0];
+
+span.onclick = function() {
+    modalOne.style.display = 'none';
+}
+
+function modalPageOne() {
+    console.log('it works!');
+    modalOne.style.display = 'block';
+}
+
+window.onclick = function(event) {
+    if (event.target == modalOne) {
+        modalOne.style.display = 'none';
+    }
 }
