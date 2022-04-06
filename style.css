@@ -396,7 +396,7 @@ h4.img-txt {
 
 .modal-container-right input, textarea {
     background-color: #466582;
-    color: #d3dde6;
+    color: var(--bgr-gray);
     padding: 1em;
     font-weight: bold;
     width: 100%;
@@ -411,6 +411,7 @@ input[type=submit] {
     width: 30%;
     align-self: flex-end;
     cursor: pointer;
+    font-size: 1.2em;
 }
 
 
@@ -423,7 +424,7 @@ textarea {
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-family: 'Federo', sans-serif;    
-    color: #d3dde6;
+    color: var(--bgr-gray);
     font-size: 1.5em;
     opacity: 1; /* Firefox */    
   }
