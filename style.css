@@ -1,8 +1,8 @@
 :root {
     --bgr-blue: #253878;
     --letter-gray: #7a7a7a;
-    /* --bgr-gray: #8c8e8f; */
     --bgr-gray: #03070F;
+    /* --bgr-gray: #010104; */
     --blgray: #d3dde6;
 }
 
@@ -56,7 +56,7 @@ body, ::after, ::before {
 
 .navbar a {
     text-decoration: none;    
-    font-size: .9em;
+    font-size: 1em;
     cursor: pointer;
     /* padding: .5em; */
 }
@@ -72,7 +72,8 @@ body, ::after, ::before {
 }
 
 .nav-container-1 {    
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 0 .5em;
     gap: 1em;
     flex: 2;
 }
@@ -81,7 +82,7 @@ body, ::after, ::before {
     flex: 2;
     gap: .7em;
     padding: .5em;
-    font-weight: bold;    
+    /* font-weight: bold;   */
     justify-content: space-around;    
 }
 
@@ -131,7 +132,7 @@ body, ::after, ::before {
 .img-container {
     width: 100%;
     position: relative;
-    margin-top: 21vmin;
+    margin-top: 23vmin;
     /* border-radius: .5em; */
 }
 
@@ -179,10 +180,11 @@ body, ::after, ::before {
 h4.img-txt {
     width: 65%;
     top: 37%;
-    left: 23%;
+    left: 17%;
     padding: .5em;
     color: var(--blgray);
-    cursor: none;    
+    cursor: none;
+    text-align: center;
     font-size: 3.1vw;
     text-shadow: 2px 2px 2px var(--bgr-gray);
 }
@@ -210,7 +212,7 @@ h4.img-txt {
 } */
 
 
-.welcome-section, .about-container {    
+.welcome-section, .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,13 +224,6 @@ h4.img-txt {
     /* border-radius: .5em;    */
 }
 
-.welcome-section h3 {
-    align-self: flex-start;
-    padding: 1em 2em;
-    font-size: 1.3em;
-    margin: .5em;
-}
-
 .welcome-section h2, .welcome-section p {
     width: 65%;
     text-align: center;    
@@ -238,7 +233,7 @@ h4.img-txt {
 }
 
 .about-container {
-    background: url('./img/fishing.png') center center;
+    /* background: url('./img/moon.png') center center; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -249,16 +244,16 @@ h4.img-txt {
 .about-img-container h1 {
     font-size: 3vw;
     text-align: center;
-    color: var(--bgr-gray) ;
-    text-shadow: 1px 1px var(--blgray);
-    background: var(--bgr-gray);
-    padding: 0.5em;
+    color: var(--blgray) ;
+    /* text-shadow: 1px 1px var(--blgray); */
+    /* background: var(--bgr-gray); */
+    padding: 0.4em;
     border-radius: 0.3em;
     opacity: .8;
 }
 
 .description-container {
-    background: url("./img/build.png") no-repeat center center fixed;
+    background: url("./img/moon.png") no-repeat center center fixed;
     background-size: cover;
     display: grid;
     gap: 1em;
@@ -271,7 +266,7 @@ h4.img-txt {
 
 .container-item {
     /* background: url('./img/fishing.png'); */
-    background-color: var(--bgr-gray);
+    /* background-color: var(--bgr-gray); */
     width: 100%;
     height: auto;
     border-radius: 5%;
