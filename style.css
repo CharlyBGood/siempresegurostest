@@ -490,6 +490,18 @@ textarea {
     cursor: pointer;
 }
 
+.modal-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal-section-one, .modal-section-two {
+    display: flex;
+    flex-direction: row;
+}
+
 @media screen and (max-width: 850px) {
 
     .hero {
