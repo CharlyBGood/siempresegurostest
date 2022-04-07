@@ -58,7 +58,6 @@ body, ::after, ::before {
     text-decoration: none;    
     font-size: .9em;
     cursor: pointer;
-    /* padding: .5em; */
 }
 
 .navbar a:hover {
@@ -81,9 +80,12 @@ body, ::after, ::before {
 .nav-container-2 {
     flex: 2;
     gap: .7em;
-    padding: .5em;
-    /* font-weight: bold;   */
-    justify-content: space-around;    
+    justify-content: space-around;
+}
+
+.nav-container-2 a {
+    border-bottom: 1px solid var(--blgray);
+    padding: .3em;
 }
 
 /* responsive navbar toggle */
@@ -117,6 +119,16 @@ body, ::after, ::before {
     border-radius: 3em;
 }
 
+.navbar_toggle span.arrow-down {    
+    width: 100%;
+    font-size: 5vw;
+    padding: .2em 0;
+    text-align: center;    
+    background-color: var(--bgr-gray);
+    color: var(--blgray);
+    /* border: 1px solid var(--bgr-blue); */
+    border-radius: 3em;
+}
 
 
 /* header logo */
@@ -391,11 +403,22 @@ h4.img-txt {
     align-items: flex-start;
     width: 100%;
     margin: 0 auto;
-    padding: 1em;
+    padding: .5em;
+}
+
+.modal-container-right form h3 {    
+    color: #d3dde6;
+    font-size: 1.6em;
+    padding: .2em;
+}
+
+.modal-container-right {
+    background-color: var(--bgr-gray);        
+    width: 55%;
 }
 
 .modal-container-right input, textarea {
-    background-color: #466582;
+    background-color: var(--blgray);
     color: var(--bgr-gray);
     padding: 1em;
     font-weight: bold;
@@ -404,7 +427,7 @@ h4.img-txt {
     border-radius: .5em;
     margin: .2em 0;
     align-self: flex-start;
-    
+    opacity: .6;    
 }
 
 input[type=submit] {
@@ -437,17 +460,6 @@ textarea {
     color: #d3dde6;
   }
 
-.modal-container-right form h3 {    
-    color: #d3dde6;
-    font-size: 1.6em;
-    padding: .2em;
-}
-
-.modal-container-right {
-    background-color: var(--bgr-gray);        
-    width: 35%;
-}
-
 .modal-container p, .modal-container h2, .modal-container h3 {
     color: var(--blgray);
     padding: .5em 1.2em;
@@ -462,6 +474,7 @@ textarea {
 
 .modal-container h2 {
     font-size: 2em;
+    padding-left: .8em;
 }
 
 .close {
@@ -518,13 +531,14 @@ textarea {
     }
 
     .nav-container-2.active a {
-        width: 100%;
+        width: 50%;
         text-align: center;
         padding: 1.3em;
+        border-bottom: 1px solid #071022;
     }
 
     .nav-container-2.active a:hover {
-        background-color: var(--bgr-blue);
+        /* background-color: var(--bgr-blue); */
         opacity: .6;
         color: var(--blgray);        
     }
@@ -580,10 +594,11 @@ textarea {
         margin: 1em;
         right: 0;
         flex-direction: column;
+        align-items: center;
     }
 
     .modal-container-left, .modal-container-right {
-        width: 100%;
+        width: 85%;
         border-radius: 1em;
     }
 
