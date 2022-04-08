@@ -4,6 +4,7 @@
     --bgr-gray: #03070F;
     /* --bgr-gray: #010104; */
     --blgray: #d3dde6;
+    --lightblue: #44b0de;
 }
 
 * {
@@ -56,12 +57,7 @@ body, ::after, ::before {
 
 .navbar a {
     text-decoration: none;    
-    font-size: .9em;
     cursor: pointer;
-}
-
-.navbar a:hover {
-    color: var(--letter-gray);
 }
 
 .navbar-container {
@@ -75,6 +71,7 @@ body, ::after, ::before {
     margin: 0 .5em;
     gap: 1em;
     flex: 2;
+    font-size: .9em;
 }
 
 .nav-container-2 {
@@ -83,9 +80,15 @@ body, ::after, ::before {
     justify-content: space-around;
 }
 
-.nav-container-2 a {
-    border-bottom: 1px solid var(--blgray);
+.nav-container-2 a {    
     padding: .3em;
+    font-size: 1em;
+}
+
+.nav-container-2 a:hover {
+    border-bottom: 1px solid var(--lightblue);
+    font-size: 1.2em;
+    color: var(--lightblue);
 }
 
 /* responsive navbar toggle */
@@ -110,14 +113,14 @@ body, ::after, ::before {
     border-radius: 3em;
 } */
 
-.navbar_toggle svg {    
+/* .navbar_toggle svg {    
     width: 100%;
     font-size: 2.1em;    
     background-color: var(--bgr-gray);
     color: var(--blgray);
-    /* border: 1px solid var(--bgr-blue); */
+    border: 1px solid var(--bgr-blue);
     border-radius: 3em;
-}
+} */
 
 .navbar_toggle span.arrow-down {    
     width: 100%;
@@ -125,7 +128,7 @@ body, ::after, ::before {
     padding: .2em 0;
     text-align: center;    
     background-color: var(--bgr-gray);
-    color: var(--blgray);
+    color: var(--lightblue);
     /* border: 1px solid var(--bgr-blue); */
     border-radius: 3em;
 }
@@ -245,7 +248,7 @@ h4.img-txt {
 }
 
 .about-container {
-    background: #000;
+    background: var(--bgr-gray);
     /* background: url('./img/moon.png') center center; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,32 +268,36 @@ h4.img-txt {
 }
 
 .description-container {
-    background: url("./img/moon.png") no-repeat center center fixed;
+    background: url("./img/black.png") no-repeat center center fixed;
     background-size: cover;
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(14vw, 1fr));
     justify-content: space-evenly;
-    width: 100%;
+    width: 85%;
     margin: auto;
     padding: 1em;
+    border-radius: .5em;
 }
 
-.container-item {
-    /* background: url('./img/fishing.png'); */
-    /* background-color: var(--bgr-gray); */
+.container-item {    
+    /* background-image: url("./img/rock.png"); */
     width: 100%;
     height: auto;
-    border-radius: 5%;
-    opacity: .8;
-    
+    border-radius: .5em;
+    /* opacity: .8; */
+    /* background-color: var(--blgray); */
 }
 
 .container-item p, .container-item h2 {    
-    color: var(--blgray) ;
+    color: var(--blgray);
+    text-shadow: 2px 2px 2px var(--bgr-gray);
     font-size: 2vw;
     padding: .5em;
+    margin: .2em auto;
+    /* background-color: var(--blgray); */
     text-align: center;
+    border-radius: .2em;
 }
 
 
@@ -372,22 +379,21 @@ h4.img-txt {
     position: absolute;
     z-index: 1;    
     top: 1em;
-    right: 10%;
+    right: 10%;    
     /* overflow: auto; */
     opacity: .9;
 }
 
 .modal-container h1 {
-    background-color: var(--bgr-gray);
-    color: var(--blgray);
+    background-color: var(--lightblue);
+    color: var(--bgr-gray);
     padding: 1em;
     margin: 0 auto;
 }
 
 .main-container {
     display: flex;
-    justify-content: center;
-    /* width: 100%; */
+    justify-content: center;    
 }
 
 .modal-container-left {
@@ -497,10 +503,40 @@ textarea {
     align-items: center;
 }
 
+
 .modal-section-one, .modal-section-two {
     display: flex;
     flex-direction: row;
+    margin: 1em auto;
+    align-items: flex-start;
 }
+
+.modal-section img {
+    width: 40%;
+
+    align-self: center;
+}
+
+.modal-section-words p, .modal-section-words h3, .modal-section-words h4{
+    text-align: center;
+    font-size: 1.3em;
+    margin: .5em;
+}
+
+.modal-section-three {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.modal-section-three h2, .modal-section-three h4 {
+    text-align: center;
+    margin: .5em;
+}
+
+/* .modal-section-three img {
+    width: 27vw;
+} */
 
 @media screen and (max-width: 850px) {
 
