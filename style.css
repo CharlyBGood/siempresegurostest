@@ -5,6 +5,7 @@
     /* --bgr-gray: #010104; */
     --blgray: #d3dde6;
     --lightblue: #44b0de;
+    --goldenNew: #f7d16e;
 }
 
 * {
@@ -76,19 +77,17 @@ body, ::after, ::before {
 
 .nav-container-2 {
     flex: 2;
-    gap: .7em;
-    justify-content: space-around;
+    gap: .6em;
+    justify-content: space-evenly;
 }
 
 .nav-container-2 a {    
-    padding: .3em;
     font-size: 1em;
 }
 
 .nav-container-2 a:hover {
     border-bottom: 1px solid var(--lightblue);
     font-size: 1.2em;
-    color: var(--lightblue);
 }
 
 /* responsive navbar toggle */
@@ -147,7 +146,7 @@ body, ::after, ::before {
 .img-container {
     width: 100%;
     position: relative;
-    margin-top: 23vmin;
+    margin-top: 21vmin;
     /* border-radius: .5em; */
 }
 
@@ -380,9 +379,23 @@ h4.img-txt {
     z-index: 1;    
     top: 1em;
     right: 10%;    
-    /* overflow: auto; */
+    overflow: auto;
     opacity: .9;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
 
 .modal-container h1 {
     background-color: var(--lightblue);
@@ -480,18 +493,22 @@ textarea {
 
 .modal-container h2 {
     font-size: 2em;
+}
+
+.modal-container-left h2 {
+    font-size: 2em;
     padding-left: .8em;
 }
 
 .close {
-    color: var(--blgray);
+    color: var(--bgr-gray);
     float: right;
     font-size: 3em;
     padding: 0 1em;
 }
 
 .close:hover, .close:focus {
-    color: #000000;
+    color: var(--blgray);
     text-decoration: none;
     cursor: pointer;
 }
@@ -501,6 +518,8 @@ textarea {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin: 2em;
+    border-bottom: 1px solid var(--letter-gray);
 }
 
 
@@ -511,10 +530,19 @@ textarea {
     align-items: flex-start;
 }
 
+/* .modal-section-two {
+    border-bottom: 1px solid var(--lightblue);    
+} */
+
 .modal-section img {
     width: 40%;
-
     align-self: center;
+}
+
+.modal-section-words {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modal-section-words p, .modal-section-words h3, .modal-section-words h4{
@@ -526,17 +554,52 @@ textarea {
 .modal-section-three {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    align-items: center;
 }
 
-.modal-section-three h2, .modal-section-three h4 {
+.modal-section-three img {
+    width: 21em;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+.modal-aside-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+    margin: 2em;
+    border-left: 1px solid var(--letter-gray);
+}
+
+.modal-aside-1 a {
+    text-decoration: none;
+    padding: .3em;    
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 95%;
+    padding: .5em;
+}
+
+.modal-footer a {
+    text-decoration: none;
+}
+
+.modal-footer p, .modal-footer h3 {
+    margin: .3em auto;    
     text-align: center;
-    margin: .5em;
 }
 
-/* .modal-section-three img {
-    width: 27vw;
-} */
+.modal-footer-one, .modal-footer-two, .modal-footer-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
 
 @media screen and (max-width: 850px) {
 
@@ -588,7 +651,7 @@ textarea {
     .nav-container-2.active a:hover {
         /* background-color: var(--bgr-blue); */
         opacity: .6;
-        color: var(--blgray);        
+        color: var(--lightblue);        
     }
 
     .header-logo {

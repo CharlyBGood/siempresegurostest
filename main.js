@@ -48,8 +48,8 @@ function modalPageOne() {
     modalOne.style.display = 'block';
 }
 
-window.onclick = function(event) {
+window.addEventListener('click', function(event) {
     if (event.target == modalOne) {
         modalOne.style.display = 'none';
     }
-}
+});
