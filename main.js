@@ -29,7 +29,7 @@ function initSlideShow(slideshow) {
     }, time);
 }
 
-// modal container
+// MODAL ONE CONTAINER
 
 let modalOne = document.getElementById('myModalOne');
 
@@ -50,3 +50,5 @@ window.onclick = function(event) {
         modalOne.style.display = 'none';
     }
 };
+
+// MODAL ONE CONTAINER
