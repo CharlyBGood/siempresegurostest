@@ -127,7 +127,7 @@ body, ::after, ::before {
     padding: .2em 0;
     text-align: center;    
     background-color: var(--bgr-gray);
-    color: var(--lightblue);
+    color: var(--letter-gray);
     /* border: 1px solid var(--bgr-blue); */
     border-radius: 3em;
 }
@@ -146,7 +146,7 @@ body, ::after, ::before {
 .img-container {
     width: 100%;
     position: relative;
-    margin-top: 21vmin;
+    margin-top: 24vmin;
     /* border-radius: .5em; */
 }
 
@@ -567,7 +567,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
     margin: 2em;
     border-left: 1px solid var(--letter-gray);
 }
