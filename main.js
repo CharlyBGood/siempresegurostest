@@ -31,25 +31,22 @@ function initSlideShow(slideshow) {
 
 // modal container
 
-let weAre = document.getElementById('quienes-somos');
-
-weAre.addEventListener('click', modalPageOne);
-
 let modalOne = document.getElementById('myModalOne');
 
-let span = document.getElementsByClassName('close')[0];
+let quienesBtn = document.getElementById('quienesSomosBtn');
 
-span.onclick = function() {
+let span1 = document.getElementsByClassName('close')[0];
+
+span1.onclick = function() {
     modalOne.style.display = 'none';
 }
 
-function modalPageOne() {
-    console.log('it works!');
+quienesBtn.onclick = function() {
     modalOne.style.display = 'block';
 }
 
-window.addEventListener('click', function(event) {
+window.onclick = function(event) {
     if (event.target == modalOne) {
         modalOne.style.display = 'none';
     }
-});
+};
