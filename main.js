@@ -52,3 +52,44 @@ window.onclick = function(event) {
 };
 
 // MODAL ONE CONTAINER
+
+// MODAL TWO CONTAINER
+let modalTwo = document.getElementById('myModalTwo');
+
+let segurosBtn = document.getElementById('segurosBtn');
+
+let span = document.getElementsByClassName('close')[0];
+
+span.onclick = function() {
+    modalTwo.style.display = 'none';
+}
+
+segurosBtn.onclick = function() {
+    modalTwo.style.display = 'block';
+}
+
+window.onclick = function(event) {
+    if (event.target == modalTwo) {
+        modalTwo.style.display = 'none';
+    }
+};
+
+
+//  modal footer slideShow2
+
+let slideIndex = 0;
+carrousel();
+
+function carrousel() {
+    let i;
+    let x = document.getElementsByClassName('slideShow2');
+    for (let i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';        
+    }
+    slideIndex++;
+    if (slideIndex > x.length) { slideIndex = 1 }
+    x[slideIndex-1].style.display = 'block';
+    setTimeout(carrousel, 2000);
+}
+
+// MODAL TWO CONTAINER
