@@ -43,13 +43,9 @@ span1.onclick = function() {
 
 quienesBtn.onclick = function() {
     modalOne.style.display = 'block';
+    document.body.style.overflow = 'hidden';
 }
 
-window.onclick = function(event) {
-    if (event.target == modalOne) {
-        modalOne.style.display = 'none';
-    }
-};
 
 // MODAL ONE CONTAINER
 
@@ -58,7 +54,7 @@ let modalTwo = document.getElementById('myModalTwo');
 
 let segurosBtn = document.getElementById('segurosBtn');
 
-let span = document.getElementsByClassName('close')[0];
+let span = document.getElementsByClassName('close-2')[0];
 
 span.onclick = function() {
     modalTwo.style.display = 'none';
@@ -66,14 +62,8 @@ span.onclick = function() {
 
 segurosBtn.onclick = function() {
     modalTwo.style.display = 'block';
+    document.body.style.overflow = 'hidden';
 }
-
-window.onclick = function(event) {
-    if (event.target == modalTwo) {
-        modalTwo.style.display = 'none';
-    }
-};
-
 
 //  modal footer slideShow2
 
@@ -81,7 +71,6 @@ let slideIndex = 0;
 carrousel();
 
 function carrousel() {
-    let i;
     let x = document.getElementsByClassName('slideShow2');
     for (let i = 0; i < x.length; i++) {
         x[i].style.display = 'none';        
@@ -93,3 +82,13 @@ function carrousel() {
 }
 
 // MODAL TWO CONTAINER
+
+// close when click out of modal container
+
+window.onclick = function(event) {
+    if (event.target == modalOne || event.target == modalTwo) {
+        modalOne.style.display = 'none';
+        modalTwo.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+};
