@@ -612,11 +612,11 @@ h4.img-txt {
 }
 
 .close-2 {
-    color: #aaa;
+    color: var(--bgr-gray);
     align-self: flex-end;
-    font-size: 2em;
-    padding: 0 .5em;
-    font-weight: bold;
+    font-size: 1.1em;
+    /* padding: 0 .5em; */
+    padding-left: 4em;
   }
   
 .close-2:hover,
@@ -644,7 +644,7 @@ h4.img-txt {
       border-radius: .2em;
   }
 
-.modal-content-left h1 {
+.modal-content-2 h1 {
       text-align: center;
       color: var(--bgr-gray);
       background-color: var(--lightblue);
@@ -791,14 +791,13 @@ h4.img-txt {
   background-color: var(--lightblue);
   margin: 0;
   color: var(--bgr-gray);
+  padding: .5em;
 }
 
 .close-3 {
-  color: #aaa;
+  color: var(--bgr-gray);
   float: right;
   position: relative;
-  top: 5%;
-  right: 6%;
   font-size: 2em;
   padding: 0 0.5em;
   font-weight: bold;
