@@ -6,31 +6,48 @@ toggleBtn.addEventListener('click', ()=> {
     console.log('workddddssss')    
 })
 
-// slideshow
+// SLIDESHOW 2
 
-let slideshows = document.querySelectorAll('[data-component="slideshow"]');
+let slideIndex = 0;
+let slides;
+showSlides();
 
-slideshows.forEach(initSlideShow);
+function showSlides(n) {
+    let i;
+    slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000);
+  }
 
-function initSlideShow(slideshow) {
-    let slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
-    let index = 0, time = 5000;
-    slides[index].classList.add('active');
-
-    setInterval( () => {
-        slides[index].classList.remove('active');
-
-        // go over each slide incrementing the index
-        index++;
-
-        if (index === slides.length) index = 0;
-
-        slides[index].classList.add('active');
-    }, time);
+// Next/previous controls
+function plusSlides(position) {
+    slideIndex += position;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    else if(slideIndex<1){slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";
 }
 
+// Thumbnail image controls
+function currentSlide(n) {
+    if (index> slides.length) {index = 1}
+    else if(index<1){index = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slides[index-1].style.display = "block"; 
+}
 
+// SLIDESHOW 2
 
+// -------------------------------------
 
 // MODAL ONE CONTAINER
 
@@ -86,12 +103,33 @@ function carrousel() {
 
 // MODAL TWO CONTAINER
 
+// MODAL THREE CONTAINER
+
+let modalThree = document.getElementById('myModalThree');
+
+let descargaBtn = document.getElementById('descargaBtn');
+
+let span3 = document.getElementsByClassName('close-3')[0];
+
+span3.onclick = function() {
+    modalThree.style.display = 'none';
+}
+
+descargaBtn.onclick = function() {
+    modalThree.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+// MODAL THREE CONTAINER
+
+
 // close when click out of modal container
 
 window.onclick = function(event) {
-    if (event.target == modalOne || event.target == modalTwo) {
+    if (event.target == modalOne || event.target == modalTwo || event.target == modalThree) {
         modalOne.style.display = 'none';
         modalTwo.style.display = 'none';
+        modalThree.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
 };
