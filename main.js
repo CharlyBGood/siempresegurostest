@@ -29,6 +29,9 @@ function initSlideShow(slideshow) {
     }, time);
 }
 
+
+
+
 // MODAL ONE CONTAINER
 
 let modalOne = document.getElementById('myModalOne');
@@ -67,7 +70,7 @@ segurosBtn.onclick = function() {
 
 //  modal footer slideShow2
 
-let slideIndex = 0;
+let slideIndexModal = 0;
 carrousel();
 
 function carrousel() {
@@ -75,9 +78,9 @@ function carrousel() {
     for (let i = 0; i < x.length; i++) {
         x[i].style.display = 'none';        
     }
-    slideIndex++;
-    if (slideIndex > x.length) { slideIndex = 1 }
-    x[slideIndex-1].style.display = 'block';
+    slideIndexModal++;
+    if (slideIndexModal > x.length) { slideIndexModal = 1 }
+    x[slideIndexModal-1].style.display = 'block';
     setTimeout(carrousel, 2000);
 }
 
