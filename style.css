@@ -26,16 +26,17 @@ body, ::after, ::before {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     font-family: 'Federo', sans-serif;
     font-size: 15px;
     color: var(--blgray);
 }
 
-/* .hero {
+.hero {
     width: 100%;
-    height: 100vh;
-} */
+    position: relative;
+    height: auto;
+}
 
 .navbar {
     display: flex;
@@ -46,6 +47,7 @@ body, ::after, ::before {
     top: 0;
     position: fixed;
     z-index: 1;
+    text-shadow: 7px 5px 5px var(--bgr-gray);
 }
 
 .navbar a {
@@ -79,7 +81,7 @@ body, ::after, ::before {
 
 .nav-container-2 a:hover {
     border-bottom: 1px solid var(--lightblue);
-    font-size: 1.2em;
+    
 }
 
 /* responsive navbar toggle */
@@ -112,21 +114,22 @@ body, ::after, ::before {
 }
 
 .header-logo-name {
-    width: 17em;
+    width: 21vw;
+    padding: 1em;
 }
 
 .slideShow {
     width: 100%;
     position: relative;
-    margin-top: 7%; 
-    height: 100%;
+    margin-top: 12vh; 
+    /* height: 100vh; */
     
 }
 
 
 .slide img {
     max-width: 100%;
-    
+    height: auto;
 }
 
 .slide {
@@ -174,11 +177,11 @@ h4.img-txt {
     position: absolute;
     background-color: var(--bgr-blue);
     width: 100%;
-    height: 100%;
+    height: 99.5%;
     top: 0;
     left: 0;
     right: 0;
-    opacity: .75;
+    opacity: .6;
 }
 
 /* arrows */
@@ -215,7 +218,7 @@ h4.img-txt {
 }
 
 .about-img-container h1 {
-    font-size: 3vw;
+    font-size: 3.3vw;
     text-align: center;
     color: var(--blgray) ;
     /* text-shadow: 1px 1px var(--blgray); */
@@ -1006,6 +1009,10 @@ input[type="submit"] {
         /* font-size: 6vmin; */
         /* top: 30%; */
         left: 21%;
+    }
+
+    .slideShow {
+      margin-top: 27%;
     }
 
     .footer-span {
