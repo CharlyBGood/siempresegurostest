@@ -108,9 +108,9 @@ body, ::after, ::before {
 /* header logo */
 
 .header-logo {
-    width: 9vw;
-    padding: .6em;
-    margin: .5em;
+    width: 13vw;
+    padding: 1em;
+    /* margin: .5em; */
 }
 
 .header-logo-name {
@@ -121,14 +121,13 @@ body, ::after, ::before {
 .slideShow {
     width: 100%;
     position: relative;
-    margin-top: 12vh; 
+    margin-top: 21vh; 
     /* height: 100vh; */
-    
 }
 
 
 .slide img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -993,11 +992,14 @@ input[type="submit"] {
     }
 
     .header-logo {
-        width: 19vw;
+        width: 23vw;
+        margin-top: .5em;
+        padding: 0;
     }
     
     .header-logo-name {
         width: 25vw;
+        padding: 0;
     }
     
     /* slideshow content */
@@ -1012,7 +1014,7 @@ input[type="submit"] {
     }
 
     .slideShow {
-      margin-top: 27%;
+      margin-top: 24%;
     }
 
     .footer-span {
