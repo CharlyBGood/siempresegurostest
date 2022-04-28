@@ -122,14 +122,32 @@ descargaBtn.onclick = function() {
 
 // MODAL THREE CONTAINER
 
+// MODAL CONTAINER FOUR
+
+let modalFour = document.getElementById('myModalFour');
+
+let contactoBtn = document.getElementById('contactoBtn');
+
+let span4 = document.getElementsByClassName('close-4')[0];
+
+span4.onclick = function() {
+    modalFour.style.display = 'none';
+}
+
+contactoBtn.onclick = function() {
+    modalFour.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
 
 // close when click out of modal container
 
 window.onclick = function(event) {
-    if (event.target == modalOne || event.target == modalTwo || event.target == modalThree) {
+    if (event.target == modalOne || event.target == modalTwo || event.target == modalThree || event.target == modalFour) {
         modalOne.style.display = 'none';
         modalTwo.style.display = 'none';
         modalThree.style.display = 'none';
+        modalFour.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
 };
