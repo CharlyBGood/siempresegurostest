@@ -1,10 +1,23 @@
 let toggleBtn = document.getElementsByClassName('navbar_toggle')[0];
 let toggleLinks = document.getElementsByClassName('nav-container-2')[0];
 
-toggleBtn.addEventListener('click', ()=> {
+toggleBtn.addEventListener('click', openToggle);
+
+function openToggle() {
     toggleLinks.classList.toggle('active');
-    console.log('workddddssss')    
-})
+    console.log('workddddssss');
+    toggleLinks.onclick = function() {
+        console.log('clicked on a link');
+        toggleLinks.classList.toggle('active');    
+    }
+}
+
+
+// function closeToggle() {
+//     console.log('this is');
+//     document.querySelector('active')
+//  }
+
 
 // SLIDESHOW 2
 
