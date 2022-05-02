@@ -1074,6 +1074,7 @@ input[type="submit"] {
   margin: 1em auto;
   width: 9em;
   border-radius: 0.4em;
+  border: 1px solid var(--lightblue);
   cursor: pointer;
 }
 
