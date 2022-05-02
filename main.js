@@ -8,16 +8,9 @@ function openToggle() {
     console.log('workddddssss');
     toggleLinks.onclick = function() {
         console.log('clicked on a link');
-        toggleLinks.classList.toggle('active');    
+        toggleLinks.classList.toggle('active');
     }
 }
-
-
-// function closeToggle() {
-//     console.log('this is');
-//     document.querySelector('active')
-//  }
-
 
 // SLIDESHOW 2
 
