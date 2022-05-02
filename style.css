@@ -657,7 +657,7 @@ textarea {
   flex-direction: column;
   justify-content: space-around;
   width: 55%;
-  border-right: 1px solid var(--blgray);
+  border-right: 1px solid var(--lightblue);
   padding: 0.5em;
   align-items: center;
 }
@@ -733,11 +733,13 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin: 0.3em;
+  width: 85%;
+  margin: .3em auto;
+  gap: 1em;
 }
 
 .img-section img {
-  width: 35vw;
+  width: 14vw;
   border-radius: 0.5em;
 }
 
@@ -745,12 +747,13 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  flex-wrap: wrap;
+  /* width: 50%; */
   margin: 0.5em auto;
 }
 
 .img-section-1 h2 {
-  font-size: 2.5vw;
+  font-size: 1.3em;
   padding: .5em;
   color: var(--blgray);
 }
@@ -1284,7 +1287,7 @@ input[type="submit"] {
   }
 
   .modal-content-right form {
-    width: 90%;
+    width: 75%;
   }
   /* MODAL TWO CONTAINER */
 
