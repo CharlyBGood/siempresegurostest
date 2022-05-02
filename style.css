@@ -422,6 +422,7 @@ h4.img-txt {
   color: #d3dde6;
   font-size: 1.6em;
   padding: 0.2em;
+  border: none;
 }
 
 .modal-container-right input,
@@ -479,11 +480,14 @@ textarea {
 
 .modal-container h3 {
   font-size: 1em;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--lightblue);
+  padding-top: 1em;
 }
 
 .modal-container h2 {
   font-size: 2em;  
-  border-bottom: 1px solid var(--goldenNew);
+  /* border-bottom: 1px solid var(--goldenNew); */
 }
 
 .modal-content-left p {
@@ -491,7 +495,7 @@ textarea {
 }
 
 .modal-section-words h3 {
-  border-bottom: 1px solid var(--goldenNew);
+  border-bottom: 1px solid var(--lightblue);
 }
 
 .close {
