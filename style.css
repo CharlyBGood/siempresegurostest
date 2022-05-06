@@ -96,7 +96,7 @@ body,
 
 .navbar_toggle span.arrow-down {
   width: 100%;
-  font-size: 5vw;
+  font-size: 6vw;
   padding: 0.2em 0;
   text-align: center;
   background-color: var(--blckBgr);
@@ -1229,7 +1229,7 @@ input[type="submit"] {
   }
 
   .slideShow {
-    margin-top: 23%;
+    margin-top: 26%;
   }
 
   .footer-span {
