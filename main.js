@@ -91,21 +91,6 @@ segurosBtn.onclick = function() {
     document.body.style.overflow = 'hidden';
 }
 
-//  modal footer slideShow2
-
-let slideIndexModal = 0;
-carrousel();
-
-function carrousel() {
-    let x = document.getElementsByClassName('slideShow2');
-    for (let i = 0; i < x.length; i++) {
-        x[i].style.display = 'none';        
-    }
-    slideIndexModal++;
-    if (slideIndexModal > x.length) { slideIndexModal = 1 }
-    x[slideIndexModal-1].style.display = 'block';
-    setTimeout(carrousel, 2000);
-}
 
 // MODAL TWO CONTAINER
 
