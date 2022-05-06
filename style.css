@@ -308,6 +308,14 @@ h4.img-txt {
   font-weight: lighter;
 }
 
+.support-container h2, .about-img-container h1 {
+  letter-spacing: .2em;
+}
+
+.support-container b, .about-img-container b {  
+  color: var(--goldenNew);  
+}
+
 .img-prefooter {
   display: flex;
   width: 85%;
