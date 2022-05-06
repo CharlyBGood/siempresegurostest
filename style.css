@@ -194,8 +194,6 @@ h4.img-txt {
   margin: 0 auto;
   background-color: var(--bgr-gray);
   opacity: 0.9;
-  /* padding: 1em; */
-  /* border-radius: .5em;    */
 }
 
 .welcome-section h2,
@@ -203,13 +201,12 @@ h4.img-txt {
   width: 65%;
   text-align: center;
   font-size: 1.5em;
-  /* margin: .5em; */
-  padding: 1em;
+  padding: .3em;
+  font-weight: lighter;
 }
 
 .about-container {
   background: var(--bgr-gray);
-  /* background: url('./img/moon.png') center center; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -220,7 +217,7 @@ h4.img-txt {
   font-size: 1.5em;
   text-align: center;
   color: var(--blgray);
-  /* text-shadow: 1px 1px var(--blgray); */
+  font-weight: lighter;
   padding: 0.1em;
   border-radius: 0.3em;
   opacity: 0.8;
@@ -283,21 +280,21 @@ h4.img-txt {
 .support-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 85%;
   height: auto;
-  margin: 0 auto;
+  margin: 1em auto;
   background-color: var(--bgr-gray);
-  /* border-radius: .5em; */
   opacity: 0.9;
 }
 
 .support-container h2,
 .support-container p {
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
   font-size: 1.5em;
-  padding: 1em;
+  padding: .3em;
   text-align: center;
+  font-weight: lighter;
 }
 
 .img-prefooter {
@@ -441,7 +438,6 @@ textarea {
   background-color: var(--blgray);
   color: var(--bgr-gray);
   padding: 1em;
-  font-weight: bold;
   width: 100%;
   outline: none;
   border-radius: 0.5em;
@@ -455,10 +451,6 @@ input[type="submit"] {
   align-self: flex-end;
   cursor: pointer;
   font-size: 1.2em;
-}
-
-textarea {
-  border: 1px solid black;
 }
 
 ::placeholder {
@@ -550,7 +542,6 @@ textarea {
   align-items: center;
   padding: 1em;
   width: 100%;
-  gap: 2em;
 }
 
 .modal-section-words p,
@@ -566,7 +557,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 5em;
 }
 
 .modal-section-three img {
@@ -880,7 +871,7 @@ textarea {
 
 .main-modal-3 p {
   text-align: center;
-  font-size: 3vw;
+  font-size: 1.3em;
   margin: 1em;
 }
 
@@ -896,7 +887,8 @@ textarea {
 .form-list-container ul li {
   list-style-image: url("./img/favicon.ico");
   list-style-position: inside;
-  padding: 0.5em;
+  padding: .5em;
+  font-size: 1.2em;
 }
 
 .form-list-container {
@@ -914,7 +906,6 @@ textarea {
   align-items: center;
   width: 100%;
   margin: 1em auto;
-  padding: 2em;
   border-radius: 0.5em;
 }
 
@@ -932,7 +923,7 @@ textarea {
   align-items: center;
   width: 85%;
   margin: 0 auto;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .aside-container input,
@@ -940,7 +931,6 @@ textarea {
   background-color: var(--blgray);
   color: var(--bgr-gray);
   padding: 0.5em;
-  font-weight: bold;
   width: 100%;
   outline: none;
   border-radius: 0.5em;
@@ -1074,7 +1064,6 @@ textarea {
   background-color: var(--blgray);
   color: var(--bgr-gray);
   padding: 0.7em;
-  font-weight: bold;
   width: 100%;
   outline: none;
   border-radius: 0.5em;
@@ -1293,8 +1282,8 @@ input[type="submit"] {
   }
 
   .logoGold {
-    width: 27vw;
-    padding: 1em;
+    width: 34vw;
+    padding: 0;
   }
   .modal-section {
     margin: 0.3em;
@@ -1353,6 +1342,7 @@ input[type="submit"] {
 
   .modal-section-three {
     flex-direction: column;
+    gap: 1em;
   }
 
   .modal-section-three img {
