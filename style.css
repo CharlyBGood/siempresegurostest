@@ -211,7 +211,7 @@ h4.img-txt {
   padding-bottom: 1em;
 }
 
-.welcome-section b {
+.welcome-section a {
   color: var(--lightblue);
 }
 
@@ -312,7 +312,7 @@ h4.img-txt {
   letter-spacing: .2em;
 }
 
-.support-container b, .about-img-container b {  
+.support-container b, .about-img-container b, .welcome-section b {  
   color: var(--goldenNew);  
 }
 
@@ -427,7 +427,7 @@ h4.img-txt {
   align-items: center;
   gap: 4em;
   width: 55%;
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 .logoGold {
@@ -522,7 +522,7 @@ h4.img-txt {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5em;
+  gap: 11em;
 }
 
 .modal-section-three img {
