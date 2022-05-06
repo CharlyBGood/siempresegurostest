@@ -897,8 +897,9 @@ textarea:focus::placeholder {
 .aside-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 45%;
   padding: 1em;
 }
 
