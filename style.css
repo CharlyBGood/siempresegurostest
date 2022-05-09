@@ -646,7 +646,7 @@ h4.img-txt {
 }
 
 .modal-content-left img {
-  width: 50%;
+  width: 85%;
   border-radius: 0.2em;
 }
 
@@ -736,13 +736,14 @@ textarea:focus::placeholder {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: center;
   width: 85%;
-  margin: 0.3em auto;
+  margin: 1.5em auto;
   gap: 1em;
 }
 
 .img-section img {
-  width: 21vw;
+  width: 25%;
   border-radius: 0.5em;
 }
 
@@ -874,6 +875,7 @@ textarea:focus::placeholder {
   list-style-position: inside;
   padding: .5em;
   font-size: 1.2em;
+  margin: 1em;
 }
 
 .siniestro-container {
@@ -901,6 +903,12 @@ textarea:focus::placeholder {
   align-items: center;
   width: 45%;
   padding: 1em;
+}
+
+.aside-container img {
+  width: 75%;
+  border-radius: .5em;
+  
 }
 
 /* MODAL THREE CONTAINER */
@@ -1044,6 +1052,7 @@ textarea:focus::placeholder {
 .modal-display-right h3 {
   font-size: 1.1em;
   text-align: center;
+  font-weight: lighter;
 }
 
 .ubicacion {
