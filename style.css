@@ -492,6 +492,8 @@ h4.img-txt {
   flex-direction: row;
   margin: 1em auto;
   align-items: flex-start;
+  border: 1px solid;
+  border-radius: .3em;
 }
 
 .modal-section img {
