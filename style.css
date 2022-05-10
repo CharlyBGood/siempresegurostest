@@ -940,7 +940,10 @@ textarea:focus::placeholder {
   height: 100%;
   overflow: auto;
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background: url('./img/tren.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
