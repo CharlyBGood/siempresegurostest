@@ -315,14 +315,14 @@ h4.img-txt {
 
 .img-prefooter {
   display: flex;
-  width: 85%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   border-radius: 0.3em;
 }
 
 .img-prefooter img {
-  width: 35vw;
+  width: 35%;
   margin: 0 auto;
 }
 
@@ -1127,7 +1127,6 @@ textarea:focus::placeholder {
   }
 
   .nav-container-2.active a:hover {
-    /* background-color: var(--bgr-blue); */
     opacity: 0.6;
     color: var(--lightblue);
   }
@@ -1139,6 +1138,11 @@ textarea:focus::placeholder {
 
   .header-logo-name {
     width: 25vw;
+  }
+
+  .img-prefooter img {
+    width: 100%;
+    margin: 0 auto;
   }
 
   /* slideshow content */
