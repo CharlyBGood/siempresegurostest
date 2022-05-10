@@ -315,14 +315,14 @@ h4.img-txt {
 
 .img-prefooter {
   display: flex;
-  width: 85%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   border-radius: 0.3em;
 }
 
 .img-prefooter img {
-  width: 35vw;
+  width: 35%;
   margin: 0 auto;
 }
 
@@ -492,6 +492,9 @@ h4.img-txt {
   flex-direction: row;
   margin: 1em auto;
   align-items: flex-start;
+  border: 1px solid white;
+  border-radius: .3em;
+  padding: .5em;
 }
 
 .modal-section img {
@@ -662,6 +665,7 @@ h4.img-txt {
   font-size: 1.1em;
   font-weight: lighter;
   margin: .5em;
+  width: 60%;
 }
 
 .modal-content-right {
@@ -936,7 +940,10 @@ textarea:focus::placeholder {
   height: 100%;
   overflow: auto;
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background: url('./img/tren.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -1127,7 +1134,6 @@ textarea:focus::placeholder {
   }
 
   .nav-container-2.active a:hover {
-    /* background-color: var(--bgr-blue); */
     opacity: 0.6;
     color: var(--lightblue);
   }
@@ -1139,6 +1145,11 @@ textarea:focus::placeholder {
 
   .header-logo-name {
     width: 25vw;
+  }
+
+  .img-prefooter img {
+    width: 100%;
+    margin: 0 auto;
   }
 
   /* slideshow content */
@@ -1246,6 +1257,7 @@ textarea:focus::placeholder {
   .modal-content-left h2 {
     margin: 1em 0;
     font-size: 1.2em;
+    width: 100%;
   }
 
   .img-section {
