@@ -492,8 +492,9 @@ h4.img-txt {
   flex-direction: row;
   margin: 1em auto;
   align-items: flex-start;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: .3em;
+  padding: .5em;
 }
 
 .modal-section img {
@@ -664,6 +665,7 @@ h4.img-txt {
   font-size: 1.1em;
   font-weight: lighter;
   margin: .5em;
+  width: 60%;
 }
 
 .modal-content-right {
@@ -1252,6 +1254,7 @@ textarea:focus::placeholder {
   .modal-content-left h2 {
     margin: 1em 0;
     font-size: 1.2em;
+    width: 100%;
   }
 
   .img-section {
