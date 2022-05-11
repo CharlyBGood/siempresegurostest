@@ -882,8 +882,9 @@ textarea:focus::placeholder {
 
 .main-modal-3 p {
   text-align: center;
-  font-size: 1.3em;
-  padding: .5em 0;
+  font-size: 1.2em;
+  padding: .3em 0;
+  margin-bottom: .5em;
   border-bottom: 1px solid var(--lightblue);
 }
 
@@ -1242,10 +1243,17 @@ textarea:focus::placeholder {
 
   .modal-section-one {
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   .modal-section-two {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-section-words {
+    width: 100%;
+    padding: 1em;
   }
 
   /* MODAL ONE */
