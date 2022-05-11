@@ -13,12 +13,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-marquee-increment: 0vw
 }
 
 html {
-  background-color: var(--blckBgr);
-  /* background: url("./img/rascacielos.png") no-repeat center center fixed;
-    background-size: cover; */
+  background-color: var(--blckBgr);  
 }
 
 body,
@@ -28,9 +27,9 @@ body,
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: "Federo", sans-serif;
-  font-size: 15px;
+  font-family: "Federo", sans-serif;  
   color: var(--blgray);
+  font-size: 15px;
 }
 
 .hero {
@@ -329,8 +328,8 @@ h4.img-txt {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1em;
-  gap: 1.3em;
+  padding: .5em;
+  gap: 2em;
 }
 
 .footer-span a {
@@ -1151,6 +1150,10 @@ textarea:focus::placeholder {
     margin: 0 auto;
   }
 
+  .about-img-container h1 {
+    font-size: 1em;
+  }
+
   /* slideshow content */
   .arrow-prev,
   .arrow-next {
@@ -1171,7 +1174,7 @@ textarea:focus::placeholder {
     gap: 1em;
   }
   .footer-span span {
-    font-size: 3.1vw;
+    font-size: .8em;
   }
 
   .welcome-section p,
