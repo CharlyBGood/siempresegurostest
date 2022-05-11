@@ -410,13 +410,17 @@ h4.img-txt {
 .main-container {
   display: flex;
   justify-content: center;
+  width: 85%;
+  margin: .5em auto;
+  padding: 1em 0 1em;
+  border-bottom: 1px solid var(--lightblue);
 }
 
 .modal-container-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 65%;
+  width: 85%;
   margin: .3em 0 0 .3em;
 }
 
@@ -424,6 +428,7 @@ h4.img-txt {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 4em;
   width: 55%;
   margin: 1em 0;
@@ -442,14 +447,14 @@ h4.img-txt {
   color: var(--blgray);
   text-align: left;
   font-size: 1.2em;
-  margin: 0.3em;
+  margin-bottom: 0.3em;
+  padding: .1em 0;
 }
 
 .modal-container h3 {
   font-size: 1em;
   margin-bottom: 0;
   border-bottom: 1px solid var(--lightblue);
-  padding-top: 1em;
 }
 
 .modal-container h2 {
@@ -460,10 +465,6 @@ h4.img-txt {
 .modal-content-left p {
   padding: 0.3em;
   font-size: 1.1em;
-}
-
-.modal-section-words h3 {
-  border-bottom: 1px solid var(--lightblue);
 }
 
 .close {
@@ -483,7 +484,8 @@ h4.img-txt {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 1em;
+  margin: 1em auto;
+  width: 85%;
   background-color: var(--bgr-gray);
 }
 
@@ -493,13 +495,13 @@ h4.img-txt {
   flex-direction: row;
   margin: 1em auto;
   align-items: flex-start;
-  border: 1px solid white;
+  justify-content: space-evenly;
   border-radius: .3em;
   padding: .5em;
 }
 
 .modal-section img {
-  width: 40%;
+  width: 14em;
   align-self: center;
   border-radius: 0.3em;
 }
@@ -508,8 +510,11 @@ h4.img-txt {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
-  width: 100%;
+  width: 45%;
+}
+
+.modal-section-words h3 {
+  border-bottom: 1px solid var(--lightblue);
 }
 
 .modal-section-words p,
@@ -518,7 +523,7 @@ h4.img-txt {
   text-align: center;
   font-size: 1.3em;
   font-weight: lighter;
-  margin: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .modal-section-words p {
@@ -1209,7 +1214,7 @@ textarea:focus::placeholder {
   }
 
   .main-container {
-    margin: 1em;
+    width: 95%;
     right: 0;
     flex-direction: column;
     align-items: center;
@@ -1231,16 +1236,16 @@ textarea:focus::placeholder {
     padding: 1em;
   }
   .modal-section {
-    margin: 0.3em;
+    width: 95%;
+    margin: 0.3em auto;
   }
 
-  .modal-section-one,
+  .modal-section-one {
+    flex-direction: column-reverse;
+  }
+
   .modal-section-two {
     flex-direction: column;
-  }
-
-  .modal-section-two {
-    flex-direction: column-reverse;
   }
 
   /* MODAL ONE */
