@@ -349,20 +349,21 @@ h4.img-txt {
 
 .wsp-link {
   position: fixed;
-  bottom: 10%;
-  width: 6em;
-  height: 5em;
-  left: 93%;
-  bottom: 2.2%;
+  display: block;  
+  height: auto;
+  left: 90%;
+  bottom: 0;
   text-decoration: none;
+  opacity: .9;
 }
 
 .wsp-icon {
   position: relative;
+  padding: .6em;
 }
 
 .wsp-icon:hover {
-  width: 103%;
+  width: 5em;
 }
 
 /* .wsp-icon:active {
