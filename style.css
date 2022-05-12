@@ -16,7 +16,9 @@
 }
 
 html, body, form, fieldset, p, div, h1, h2, h3, h4, a, span {
-  -webkit-text-size-adjust:none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 html {
@@ -98,7 +100,7 @@ body,
 
 .navbar_toggle span.arrow-down {
   width: 100%;
-  font-size: 5vw;
+  font-size: 7vw;
   padding: 0.2em 0;
   text-align: center;
   background-color: var(--blckBgr);
