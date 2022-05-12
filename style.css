@@ -13,7 +13,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  -webkit-marquee-increment: 0vw
 }
 
 html {
@@ -240,7 +239,6 @@ h4.img-txt {
   gap: 1em;
   grid-template-columns: repeat(auto-fit, minmax(14vw, 1fr));
   justify-content: space-evenly;
-  /* width: 85%; */
   margin: .5em auto;
   padding: 1em;
   border-radius: 0.5em;
@@ -315,7 +313,7 @@ h4.img-txt {
 .img-prefooter {
   display: flex;
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
   margin: 0 auto;
 }
 
@@ -366,10 +364,6 @@ h4.img-txt {
   width: 5em;
 }
 
-/* .wsp-icon:active {
-  
-} */
-
 .wsp-icon:active {
   padding: .5em;
 }
@@ -386,7 +380,7 @@ h4.img-txt {
   overflow: auto;
   background-color: #000;
   /* background-color: rgba(0, 0, 0, 0.4); */
-  background: url('./img/monkeywork.gif');
+  background: url('./img/dna.gif');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -612,7 +606,7 @@ h4.img-txt {
   overflow: auto;
   background-color: #000;
   /* background-color: rgba(0, 0, 0, 0.4); */
-  background: url('./img/tormenta.gif');
+  background: url('./img/brain.gif');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
