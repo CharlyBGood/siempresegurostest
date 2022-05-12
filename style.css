@@ -347,6 +347,32 @@ h4.img-txt {
   font-size: 1.5em;
 }
 
+.wsp-link {
+  position: fixed;
+  bottom: 10%;
+  width: 6em;
+  height: 5em;
+  left: 93%;
+  bottom: 2.2%;
+  text-decoration: none;
+}
+
+.wsp-icon {
+  position: relative;
+}
+
+.wsp-icon:hover {
+  width: 103%;
+}
+
+/* .wsp-icon:active {
+  
+} */
+
+.wsp-icon:active {
+  padding: .5em;
+}
+
 /* MODAL ONE CONTAINER ONE */
 
 .modal-container {
@@ -1350,4 +1376,13 @@ textarea:focus::placeholder {
   }
 
   /* MODAL CONTAINER FOUR */
+
+  .wsp-link {
+    left: 82%;
+    bottom: -1%;
+  }
+
+  .wsp-icon {
+    width: 3.5em;
+  }
 }
