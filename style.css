@@ -2,7 +2,7 @@
   color-scheme: light only;
   --bgr-blue: #253878;
   --letter-gray: #7a7a7a;
-  --bgr-gray: #03070f;
+  --bgrSolid: #03070f;
   --blckBgr: rgba(3, 7, 15, 0.81);
   --blgray: #d3dde6;
   --lightblue: #44b0de;
@@ -22,7 +22,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, a, span {
 }
 
 html {
-  background-color: var(--blckBgr);
+  background-color: var(--bgrSolid);
 }
 
 body,
@@ -46,7 +46,8 @@ body,
 .navbar {
   display: flex;
   place-content: center space-between;
-  background-color: var(--blckBgr);
+  background-color: var(--bgrSolid);
+  opacity: .9;
   align-items: center;
   width: 100%;
   top: 0;
@@ -103,7 +104,8 @@ body,
   font-size: 7vw;
   padding: 0.2em 0;
   text-align: center;
-  background-color: var(--blckBgr);
+  background-color: var(--bgrSolid);
+  opacity: .9;
   color: var(--lightblue);
   border-radius: 3em;
 }
@@ -172,7 +174,7 @@ h4.img-txt {
   cursor: none;
   text-align: center;
   font-size: 3.1vw;
-  text-shadow: 2px 2px 2px var(--bgr-gray);
+  text-shadow: 2px 2px 2px var(--bgrSolid);
 }
 
 .text-bgr {
@@ -196,7 +198,7 @@ h4.img-txt {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  background-color: var(--bgr-gray);
+  background-color: var(--bgrSolid);
   opacity: 0.9;
 }
 
@@ -220,7 +222,7 @@ h4.img-txt {
 }
 
 .about-container {
-  background: var(--bgr-gray);
+  background: var(--bgrSolid);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -259,7 +261,7 @@ h4.img-txt {
 .container-item p,
 .container-item h2 {
   color: var(--blgray);
-  text-shadow: 2px 2px 2px var(--bgr-gray);
+  text-shadow: 2px 2px 2px var(--bgrSolid);
   font-size: 1.2em;
   padding: 0.1em;
   margin: 0.1em auto;
@@ -294,7 +296,7 @@ h4.img-txt {
   width: 85%;
   height: auto;
   margin: 1em auto;
-  background-color: var(--bgr-gray);
+  background-color: var(--bgrSolid);
   opacity: 0.9;
 }
 
@@ -418,7 +420,7 @@ h4.img-txt {
 
 .modal-content h1 {
   font-size: 1.5em;
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   padding: 0.3em;
   margin: 0 auto;
   border-radius: 0.1em;
@@ -495,7 +497,7 @@ h4.img-txt {
 }
 
 .close {
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   font-size: 3em;
 }
 
@@ -653,7 +655,7 @@ h4.img-txt {
 }
 
 .close-2 {
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   font-size: 3em;
 }
 
@@ -666,7 +668,7 @@ h4.img-txt {
 
 .modal-content-2 h1 {
   font-size: 1.5em;
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   padding: 0.3em;
   margin: 0 auto;
   border-radius: 0.1em;
@@ -860,7 +862,7 @@ textarea:focus::placeholder {
 
 .modalThree h1 {
   font-size: 1.5em;
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   padding: 0.3em;
   margin: 0 auto;
   border-radius: 0.1em;
@@ -885,7 +887,7 @@ textarea:focus::placeholder {
 }
 
 .close-3 {
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   font-size: 3em;
 }
 
@@ -1020,7 +1022,7 @@ textarea:focus::placeholder {
 
 .modal-content-4 h1 {
   font-size: 1.5em;
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   padding: 0.3em;
   margin: 0 auto;
   border-radius: 0.1em;
@@ -1028,7 +1030,7 @@ textarea:focus::placeholder {
 }
 
 .close-4 {
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   font-size: 3em;
 }
 
@@ -1057,7 +1059,7 @@ textarea:focus::placeholder {
 
 .map-button,
 .call-button {
-  background-color: var(--bgr-gray);
+  background-color: var(--bgrSolid);
   color: var(--blgray);
   padding: 0.7em 0.3em;
   margin: 1em auto;
@@ -1091,7 +1093,7 @@ textarea:focus::placeholder {
 
 .modal-display-right h2 {
   background-color: var(--lightblue);
-  color: var(--bgr-gray);
+  color: var(--bgrSolid);
   font-size: 1.5em;
   align-self: center;
   text-align: center;
@@ -1180,7 +1182,8 @@ textarea:focus::placeholder {
   }
 
   .header-logo-name {
-    width: 25vw;
+    width: 36vw;
+    padding-bottom: .5em;
   }
 
   .img-prefooter img {
@@ -1205,7 +1208,7 @@ textarea:focus::placeholder {
   }
 
   .slideShow {
-    margin-top: 24%;
+    margin-top: 28%;
   }
 
   .footer-span {
@@ -1220,7 +1223,7 @@ textarea:focus::placeholder {
   .support-container h2,
   .support-container p {
     width: 95%;
-    font-size: 1em;
+    font-size: .9em;
   }
 
   .container-item p, .container-item h2 {
