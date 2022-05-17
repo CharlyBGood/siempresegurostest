@@ -3,7 +3,7 @@
   --bgr-blue: #253878;
   --letter-gray: #7a7a7a;
   --bgr-gray: #03070f;
-  --blckBgr: rgba(3, 7, 15, 0.99);
+  --blckBgr: rgba(3, 7, 15, 0.81);
   --blgray: #d3dde6;
   --lightblue: #44b0de;
   --goldenNew: #f7d16e;
@@ -412,8 +412,8 @@ h4.img-txt {
   padding: 0.3em;
   border-radius: 0.5em;
   width: 80%;
-  background-color: var(--bgr-gray);
-  opacity: 0.9;
+  background-color: var(--blckBgr);
+  /* opacity: 0.9; */
 }
 
 .modal-content h1 {
@@ -473,7 +473,7 @@ h4.img-txt {
 .modal-container h3 {
   color: var(--blgray);
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 0.3em;
   padding: .1em 0;
 }
@@ -513,7 +513,6 @@ h4.img-txt {
   align-items: center;
   margin: 1em auto;
   width: 85%;
-  background-color: var(--bgr-gray);
 }
 
 .modal-section-one,
@@ -555,7 +554,6 @@ h4.img-txt {
 
 .modal-section-words p {
   font-size: 1.1em;
-  margin: .3em;
 }
 
 .modal-section-three {
@@ -636,13 +634,13 @@ h4.img-txt {
 .modal-content-2 {
   display: flex;
   flex-direction: column;
-  background-color: var(--bgr-gray);
+  background-color: var(--blckBgr);
   margin: 7% auto;
   padding: 0.3em;
   border-radius: 0.5em;
   width: 80%;
   color: var(--blgray);
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 .modal-2-header {
@@ -724,7 +722,7 @@ h4.img-txt {
 
 .form-style input,
 textarea {
-  background-color: var(--bgr-gray);
+  background-color: transparent;  
   color: var(--blgray);
   padding: 0.5em;
   width: 100%;
@@ -901,8 +899,7 @@ textarea:focus::placeholder {
 .main-modal-3 {
   margin: 7% auto;
   width: 85%;
-  background-color: var(--bgr-gray);
-  opacity: 0.9;
+  background-color: var(--blckBgr);  
   border-radius: 0.5em;
   padding: 0.3em;
 }
@@ -1009,8 +1006,7 @@ textarea:focus::placeholder {
   padding: 0.3em;
   border-radius: 0.5em;
   width: 85%;
-  background-color: var(--bgr-gray);
-  opacity: 0.9;
+  background-color: var(--blckBgr);
 }
 
 .modal-4-header {
@@ -1335,9 +1331,14 @@ textarea:focus::placeholder {
     width: 35vw;
   }
 
+  .modal-container p {
+    font-size: 1em;
+  }
+
   .modal-container p,
   .modal-container h2,
   .modal-container h3 {
+    
     text-align: center;
   }
 
