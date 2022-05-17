@@ -46,7 +46,8 @@ body,
 .navbar {
   display: flex;
   place-content: center space-between;
-  background-color: var(--blckBgr);
+  background-color: var(--bgrSolid);
+  opacity: .9;
   align-items: center;
   width: 100%;
   top: 0;
@@ -103,7 +104,8 @@ body,
   font-size: 7vw;
   padding: 0.2em 0;
   text-align: center;
-  background-color: var(--blckBgr);
+  background-color: var(--bgrSolid);
+  opacity: .9;
   color: var(--lightblue);
   border-radius: 3em;
 }
@@ -1180,7 +1182,8 @@ textarea:focus::placeholder {
   }
 
   .header-logo-name {
-    width: 25vw;
+    width: 36vw;
+    padding-bottom: .5em;
   }
 
   .img-prefooter img {
@@ -1205,7 +1208,7 @@ textarea:focus::placeholder {
   }
 
   .slideShow {
-    margin-top: 24%;
+    margin-top: 28%;
   }
 
   .footer-span {
@@ -1220,7 +1223,7 @@ textarea:focus::placeholder {
   .support-container h2,
   .support-container p {
     width: 95%;
-    font-size: 1em;
+    font-size: .9em;
   }
 
   .container-item p, .container-item h2 {
