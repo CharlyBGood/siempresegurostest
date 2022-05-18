@@ -12,7 +12,7 @@ $sql = "INSERT INTO `seguros_form`(Id, Nombre, postalCod, Email, Tel, Datos) VAL
 
 $result = mysqli_query($conex, $sql);
 
-if($result) {
+if($_POST['enviar']) {
     echo "¡El mensaje ha sido enviado con éxito!!";
 }
 
