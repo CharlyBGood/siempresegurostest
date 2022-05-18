@@ -7,7 +7,7 @@ $email = $_POST['email'];
 $tel = $_POST['telefono'];
 $datos = $_POST['datos'];
 
-$sql = "INSERT INTO `seguros_form`(`Id`, `Nombre`, `postalCod`, `Email`, `Tel`, `Datos`) VALUES ('0', '$nombre', '$postalCod', '$tel', '$datos')";
+$sql = "INSERT INTO `seguros_form`(Id, Nombre, postalCod, Email, Tel, Datos) VALUES ('0', '$nombre', '$postalCod', '$tel', '$datos')";
 
 
 $result = mysqli_query($conex, $sql);
