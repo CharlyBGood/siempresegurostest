@@ -191,6 +191,7 @@ h4.img-txt {
 /* arrows */
 
 /* welcome */
+
 .welcome-section,
 .about-container {
   display: flex;
@@ -200,6 +201,11 @@ h4.img-txt {
   margin: 0 auto;
   background-color: var(--bgrSolid);
   opacity: 0.9;
+}
+
+.welcome-section {
+  width: 85%;
+  margin: 1em auto;
 }
 
 .welcome-section h2,
@@ -215,6 +221,10 @@ h4.img-txt {
 
 .welcome-section h2 {
   padding-bottom: 1em;
+}
+
+.welcome-section p {
+  padding: 2em 0;
 }
 
 .blue-text {
@@ -237,7 +247,7 @@ h4.img-txt {
   padding: 0.1em;
   border-radius: 0.3em;
   opacity: 0.8;
-  margin-top: 2em;
+  margin: 2em 0 0 0;
 }
 
 .description-container {
@@ -295,7 +305,8 @@ h4.img-txt {
   flex-direction: column;
   width: 85%;
   height: auto;
-  margin: 1em auto;
+  margin: 3em auto 9em;
+  padding: 1em 0;
   background-color: var(--bgrSolid);
   opacity: 0.9;
 }
@@ -312,6 +323,11 @@ h4.img-txt {
 
 .support-container h2, .about-img-container h1 {
   letter-spacing: .2em;
+}
+
+.support-container h2 {
+  width: 35%;
+  margin-bottom: .2em;
 }
 
 .support-container b, .about-img-container b, .welcome-section b {  
@@ -517,12 +533,11 @@ h4.img-txt {
   width: 85%;
 }
 
-.modal-section-one,
-.modal-section-two {
+.modal-section-one {
   display: flex;
   flex-direction: row;
   margin: 1em auto;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
   border-radius: .3em;
   padding: .5em;
@@ -551,11 +566,6 @@ h4.img-txt {
   text-align: center;
   font-size: 1.3em;
   font-weight: lighter;
-  margin-bottom: 0.5em;
-}
-
-.modal-section-words p {
-  font-size: 1.1em;
 }
 
 .modal-section-three {
@@ -1122,6 +1132,17 @@ textarea:focus::placeholder {
 .ubicacion {
   margin: 0.3em;
   border-bottom: 1px solid var(--lightblue);
+}
+
+.footer-lightblue a {
+  color: var(--bgrSolid);
+  cursor: pointer;
+  margin: 1em auto;
+  text-decoration: none;
+}
+
+.footer-lightblue a:hover {
+  color: var(--letter-gray);
 }
 
 @media screen and (max-width: 850px) {
