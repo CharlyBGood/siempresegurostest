@@ -200,12 +200,12 @@ h4.img-txt {
   width: 100%;
   margin: 0 auto;
   background-color: var(--bgrSolid);
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 .welcome-section {
   width: 85%;
-  margin: 1em auto 9em;
+  margin: 6em auto;
 }
 
 .welcome-section h2,
@@ -221,10 +221,6 @@ h4.img-txt {
 
 .welcome-section h2 {
   padding-bottom: 1em;
-}
-
-.welcome-section p {
-  padding: 2em 0;
 }
 
 .blue-text {
@@ -247,7 +243,7 @@ h4.img-txt {
   padding: 0.1em;
   border-radius: 0.3em;
   opacity: 0.8;
-  margin: 2em 0 0 0;
+  margin: 1em 0 0 0;
 }
 
 .description-container {
@@ -275,7 +271,7 @@ h4.img-txt {
   padding: 0.1em;
   margin: 0.1em auto;
   text-align: center;
-  border-radius: 0.2em;
+  font-weight: lighter;
 }
 
 .item-1 {
@@ -406,6 +402,7 @@ h4.img-txt {
   background: url('./img/dna.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -621,9 +618,10 @@ h4.img-txt {
   overflow: auto;
   background-color: #000;
   /* background-color: rgba(0, 0, 0, 0.4); */
-  background: url('./img/brain.gif');
+  background: url('./img/brainOne.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -851,6 +849,7 @@ textarea:focus::placeholder {
   background: url('./img/repararauto.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -992,6 +991,7 @@ textarea:focus::placeholder {
   background: url('./img/tren.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -1211,9 +1211,9 @@ textarea:focus::placeholder {
     margin: 0 auto;
   }
 
-  .about-img-container h1 {
+  /* .about-img-container h1 {
     font-size: 1em;
-  }
+  } */
 
   /* slideshow content */
   .arrow-prev,
@@ -1239,8 +1239,14 @@ textarea:focus::placeholder {
   }
 
   .welcome-section, .support-container {
-    margin: 4em auto;
+    margin: 2em auto;
     width: 95%;
+    height: 50vh;
+    justify-content: center;
+  }
+
+  .support-container {
+    margin: 1em auto;
   }
 
   .welcome-section p,
@@ -1248,7 +1254,7 @@ textarea:focus::placeholder {
   .support-container h2,
   .support-container p {
     width: 85%;
-    font-size: .9em;
+    /* font-size: .9em; */
   }
 
   .description-container {
@@ -1263,7 +1269,7 @@ textarea:focus::placeholder {
   }
 
   .container-item p, .container-item h2 {
-    font-size: .9em;
+    font-size: 1em;
   }
   /* MODAL ONE */
 
