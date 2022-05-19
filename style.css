@@ -1243,7 +1243,7 @@ textarea:focus::placeholder {
   }
 
   .slideShow {
-    margin-top: 24%;
+    margin-top: 26%;
   }
 
   .footer-span {
@@ -1270,6 +1270,7 @@ textarea:focus::placeholder {
   .support-container p {
     width: 85%;
     line-height: 1.5em;
+    font-size: 1.2em;
   }
 
   .description-container {

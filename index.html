@@ -177,193 +177,197 @@
       <img src="./img/prefooter.png" alt="Super intendencia de seguros de la Nación" />  
     </div>
     
-    <div id="myModalOne" class="modal-container">
-      <div class="modal-content">
-        <div class="modal-header-1">          
-          <h1>
-            Definimos la calidad como el grado de
-            satisfacción de los clientes.
-          </h1>
-        <span class="close">&times;</span>
-        </div>
-        
-        <div class="main-container">
-          <div class="modal-container-left">
-            <h2>Nuestra esencia</h2>
-            <p>
-              Tanto las organizaciones como las personas se caracterizan por
-              tener valores y atributos que los hacen ser quienes son. 
-            </p>
-            <br>
-            <p>Valores que son la esencia misma de cada uno y se traducen en actitudes,
-                comportamientos, formas de actuar y de enfrentar los hechos a lo
-                largo del tiempo.              
-            </p>
-            <br>
-            <h2>Nuestros Valores:</h2>
-            <p>
-              Operamos con reconocidas aseguradoras nacionales e internacionales, creando valor agregado y un mayor respaldo.
-            </p>
-            <br>
-            <p>
-              Estamos en constante capacitación, siempre actualizándonos con el fin de ofrecer soluciones adecuadas y efectivas.
-            </p>
-            <br>
-            <p>
-              Buscamos estar más cerca, acompañando en cada etapa para brindar lo necesario en todo momento.
-            </p>            
+    <div id="allModals">
+      <div id="myModalOne" class="modal-container">
+        <div class="modal-content">
+          <div class="modal-header-1">          
+            <h1>
+              Definimos la calidad como el grado de
+              satisfacción de los clientes.
+            </h1>
+          <span class="close">&times;</span>
           </div>
-          <div class="modal-container-right">            
-            <div class="modal-section-three">
-              <div class="centerLogo">
-                <img class="logoGold" src="./img/logoHD2.png" alt="Maschio y Asociados logo">
-              </div>
-            </div>            
-          </div>          
-        </div>  
-        <div class="modal-section">
-          <div class="modal-section-one">
-            <img
-              src="./img/modalOne/vision.png"
-              alt="persona teniendo una visión"
-            />
-            <div class="modal-section-words">
-              <p>                    
-                Nos proponemos estar siempre que nos necesiten y acompañar en cada momento, brindando un trato especial en virtud de ofrecer mejores soluciones y beneficios.
+          
+          <div class="main-container">
+            <div class="modal-container-left">
+              <h2>Nuestra esencia</h2>
+              <p>
+                Tanto las organizaciones como las personas se caracterizan por
+                tener valores y atributos que los hacen ser quienes son. 
               </p>
+              <br>
+              <p>Valores que son la esencia misma de cada uno y se traducen en actitudes,
+                  comportamientos, formas de actuar y de enfrentar los hechos a lo
+                  largo del tiempo.              
+              </p>
+              <br>
+              <h2>Nuestros Valores:</h2>
+              <p>
+                Operamos con reconocidas aseguradoras nacionales e internacionales, creando valor agregado y un mayor respaldo.
+              </p>
+              <br>
+              <p>
+                Estamos en constante capacitación, siempre actualizándonos con el fin de ofrecer soluciones adecuadas y efectivas.
+              </p>
+              <br>
+              <p>
+                Buscamos estar más cerca, acompañando en cada etapa para brindar lo necesario en todo momento.
+              </p>            
+            </div>
+            <div class="modal-container-right">            
+              <div class="modal-section-three">
+                <div class="centerLogo">
+                  <img class="logoGold" src="./img/logoHD2.png" alt="Maschio y Asociados logo">
+                </div>
+              </div>            
+            </div>          
+          </div>  
+          <div class="modal-section">
+            <div class="modal-section-one">
+              <img
+                src="./img/modalOne/vision.png"
+                alt="persona teniendo una visión"
+              />
+              <div class="modal-section-words">
+                <p>                    
+                  Nos proponemos estar siempre que nos necesiten y acompañar en cada momento, brindando un trato especial en virtud de ofrecer mejores soluciones y beneficios.
+                </p>
+              </div>
+            </div>
+          </div>            
+          <div class="modal-footer">
+            <div class="footer-lightblue">
+              <div class="navbar-container nav-container-modal">
+                <a class="modal-menu" style="color: var(--bgr-blue); border-bottom: 1px solid var(--bgr-blue); cursor: auto;">QUIÉNES SOMOS</a>
+                <a class="modal-menu">SEGUROS</a>
+                <a class="modal-menu">SINIESTROS</a>
+                <a class="modal-menu">CONTACTO</a>
+              </div>
             </div>
           </div>
-        </div>            
-        <div class="modal-footer">
+        </div>
+      </div>
+      <div id="myModalTwo" class="modalTwo">
+        <div class="modal-content-2">
+          <div class="modal-2-header">
+            <h1>¡Es momento de tomar buenas decisiones!</h1>
+            <span class="close-2">&times;</span>
+          </div>        
+          <div class="main-modal">
+            <div class="modal-content-left">
+              <h2>En tiempos de cambios...</h2>            
+              <img src="./img/piggy.gif" alt="chanchito de ahorros flotando entre símbolos de dólar">
+              <h2><a class="blue-text">Maschio y Asoc.</a> te ofrece condiciones comerciales más beneficiosas...</h2>
+            </div>
+            <div class="modal-content-right form-style">            
+              <form action="contact.php" method="post">
+                <label>Consultanos</label>              
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" />
+                <input type="number" name="postal" id="postal" placeholder="Código Postal" />
+                <input type="email" name="email" id="email" placeholder="Email*" />
+                <input type="tel" name="telefono" id="telefono" placeholder="N° Teléfono" />
+                <textarea name="datos" id="datos" cols="21" rows="10" placeholder="Comentarios"></textarea
+                >
+                <input type="submit" name="enviar" value="Enviar" />
+              </form>
+            </div>
+          </div>
           <div class="footer-lightblue">
             <div class="navbar-container nav-container-modal">
-              <a class="modal-menu" style="color: var(--bgr-blue); border-bottom: 1px solid var(--bgr-blue); cursor: auto;">QUIÉNES SOMOS</a>
-              <a class="modal-menu">SEGUROS</a>
+              <a class="modal-menu">QUIÉNES SOMOS</a>
+              <a class="modal-menu" style="color: var(--bgr-blue); border-bottom: 1px solid var(--bgr-blue); cursor: auto;">SEGUROS</a>
               <a class="modal-menu">SINIESTROS</a>
               <a class="modal-menu">CONTACTO</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="myModalTwo" class="modalTwo">
-      <div class="modal-content-2">
-        <div class="modal-2-header">
-          <h1>¡Es momento de tomar buenas decisiones!</h1>
-          <span class="close-2">&times;</span>
-        </div>        
-        <div class="main-modal">
-          <div class="modal-content-left">
-            <h2>En tiempos de cambios...</h2>            
-            <img src="./img/piggy.gif" alt="chanchito de ahorros flotando entre símbolos de dólar">
-            <h2><a class="blue-text">Maschio y Asoc.</a> te ofrece condiciones comerciales más beneficiosas...</h2>
-          </div>
-          <div class="modal-content-right form-style">            
-            <form action="contact.php" method="post">
-              <label>Consultanos</label>              
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" />
-              <input type="number" name="postal" id="postal" placeholder="Código Postal" />
-              <input type="email" name="email" id="email" placeholder="Email*" />
-              <input type="tel" name="telefono" id="telefono" placeholder="N° Teléfono" />
-              <textarea name="datos" id="datos" cols="21" rows="10" placeholder="Comentarios"></textarea
-              >
-              <input type="submit" name="enviar" value="Enviar" />
-            </form>
-          </div>
-        </div>
-        <div class="footer-lightblue">
-          <div class="navbar-container nav-container-modal">
-            <a class="modal-menu">QUIÉNES SOMOS</a>
-            <a class="modal-menu" style="color: var(--bgr-blue); border-bottom: 1px solid var(--bgr-blue); cursor: auto;">SEGUROS</a>
-            <a class="modal-menu">SINIESTROS</a>
-            <a class="modal-menu">CONTACTO</a>
+      <div id="myModalThree" class="modalThree">
+        <div class="modal-download">
+          <div class="main-modal-3">
+            <div class="modal-header-3">
+              <h1>Si sos cliente nuestro seguí estos pasos</h1>
+              <span class="close-3">&times;</span>
+            </div>
+            <div class="section-container">
+              <div class="siniestro-container">
+                <ul>
+                  <li>Denuncia de siniestros de lunes a lunes las 24 horas.</li>
+                  <li>
+                    Envía detalles del siniestro y la documentación correspondiente a
+                    <a class="email" href="mailto:estarsiempreseguros@gmail.com">
+                      productores@estarsiempreseguros.com.ar
+                    </a>
+                  </li>
+                </ul>
+                <img class="logoGold" src="./img/logoHD2.png" alt="Maschio Asociados Logo de Oro">
+              </div>
+              <div class="aside-container">
+                <img src="./img/teclado.gif" alt="manos escribiendo en un teclado de pc">
+                <p>
+                  En caso de dudas comunicate con nosotros y te ayudaremos.
+                </p>              
+              </div>
+            </div>
+            <div class="footer-lightblue">
+              <div class="navbar-container nav-container-modal">
+                <a class="modal-menu">QUIÉNES SOMOS</a>
+                <a class="modal-menu">SEGUROS</a>
+                <a class="modal-menu" style="color: var(--bgr-blue); border-bottom: 1px solid var(--bgr-blue); cursor: auto;">SINIESTROS</a>
+                <a class="modal-menu">CONTACTO</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="myModalThree" class="modalThree">
-      <div class="modal-download">
-        <div class="main-modal-3">
-          <div class="modal-header-3">
-            <h1>Si sos cliente nuestro seguí estos pasos</h1>
-            <span class="close-3">&times;</span>
-          </div>
-          <div class="section-container">
-            <div class="siniestro-container">
-              <ul>
-                <li>Denuncia de siniestros de lunes a lunes las 24 horas.</li>
-                <li>
-                  Envía detalles del siniestro y la documentación correspondiente a
-                  <a class="email" href="mailto:estarsiempreseguros@gmail.com">
-                    productores@estarsiempreseguros.com.ar
-                  </a>
-                </li>
-              </ul>
-              <img class="logoGold" src="./img/logoHD2.png" alt="Maschio Asociados Logo de Oro">
+      <div id="myModalFour" class="modal-container-4">
+        <div class="modal-content-4">
+          <div class="modal-4-header">
+            <h1>Contactanos</h4>
+            <span class="close-4">&times;</span>              
+          </div>        
+          <div class="modal-display-4">
+            <div class="modal-display-left">
+              <button class="map-button">                  
+                <a href="https://goo.gl/maps/sAjkAx6bxECxoMKv5" target="_BLANK">
+                  VER MAPA
+                </a>
+              </button>
+              
+              <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=25%20de%20Mayo%20432%2C%20C1002ABJ%20CABA&key=AIzaSyCR0AuDb-JholwuuUjgkew3PjkAHkSU4gQ"></iframe>
+              <img class="logoGold" src="./img/logoHD2.png" alt="Logo de Maschio y Asociados">            
             </div>
-            <div class="aside-container">
-              <img src="./img/teclado.gif" alt="manos escribiendo en un teclado de pc">
-              <p>
-                En caso de dudas comunicate con nosotros y te ayudaremos.
-              </p>              
+            <div class="modal-display-right">
+              <h2>Para tener una reunión</h2>
+              <h3>Lunes a Viernes
+                de 10:00 a 17:00 hs.</h3>
+              <h3 class="citas">Las citas  deben ser acordadas previamente.</h3>
+              <h3><a class="email" href="mailto:info@estarsiempreseguros.com.ar">info@estarsiempreseguros.com.ar</a></h3>
+              <button class="call-button">
+                <a href="tel:+54 9 11 5699-9580">
+                  LLAMANOS
+                </a>              
+              </button>
+              <h2>TEL . 011 5699-9580.</h2>
+              <h3 class="ubicacion">Ubicación</h3>
+              
+              <h3> 25 de Mayo 432 Piso 4*, C.A.B.A. </h3>
+              <h3>Ciudad Autónoma de Buenos Aires.</h3>
             </div>
           </div>
           <div class="footer-lightblue">
             <div class="navbar-container nav-container-modal">
               <a class="modal-menu">QUIÉNES SOMOS</a>
               <a class="modal-menu">SEGUROS</a>
-              <a class="modal-menu" style="color: var(--bgr-blue); border-bottom: 1px solid var(--bgr-blue); cursor: auto;">SINIESTROS</a>
-              <a class="modal-menu">CONTACTO</a>
+              <a class="modal-menu">SINIESTROS</a>
+              <a class="modal-menu" style="color: var(--bgr-blue); border-bottom: 1px solid var(--bgr-blue); cursor: auto;">CONTACTO</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="myModalFour" class="modal-container-4">
-      <div class="modal-content-4">
-        <div class="modal-4-header">
-          <h1>Contactanos</h4>
-          <span class="close-4">&times;</span>              
-        </div>        
-        <div class="modal-display-4">
-          <div class="modal-display-left">
-            <button class="map-button">                  
-              <a href="https://goo.gl/maps/sAjkAx6bxECxoMKv5" target="_BLANK">
-                VER MAPA
-              </a>
-            </button>
-            
-            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=25%20de%20Mayo%20432%2C%20C1002ABJ%20CABA&key=AIzaSyCR0AuDb-JholwuuUjgkew3PjkAHkSU4gQ"></iframe>
-            <img class="logoGold" src="./img/logoHD2.png" alt="Logo de Maschio y Asociados">            
-          </div>
-          <div class="modal-display-right">
-            <h2>Para tener una reunión</h2>
-            <h3>Lunes a Viernes
-              de 10:00 a 17:00 hs.</h3>
-            <h3 class="citas">Las citas  deben ser acordadas previamente.</h3>
-            <h3><a class="email" href="mailto:info@estarsiempreseguros.com.ar">info@estarsiempreseguros.com.ar</a></h3>
-            <button class="call-button">
-              <a href="tel:+54 9 11 5699-9580">
-                LLAMANOS
-              </a>              
-            </button>
-            <h2>TEL . 011 5699-9580.</h2>
-            <h3 class="ubicacion">Ubicación</h3>
-            
-            <h3> 25 de Mayo 432 Piso 4*, C.A.B.A. </h3>
-            <h3>Ciudad Autónoma de Buenos Aires.</h3>
-          </div>
-        </div>
-        <div class="footer-lightblue">
-          <div class="navbar-container nav-container-modal">
-            <a class="modal-menu">QUIÉNES SOMOS</a>
-            <a class="modal-menu">SEGUROS</a>
-            <a class="modal-menu">SINIESTROS</a>
-            <a class="modal-menu" style="color: var(--bgr-blue); border-bottom: 1px solid var(--bgr-blue); cursor: auto;">CONTACTO</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    
     <a class="wsp-link" href="https://wa.me/5491156999580" target="_blank">
       <img class="wsp-icon" src="./img/wasap.png" alt="logo de WhatsApp">
     </a>
