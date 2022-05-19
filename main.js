@@ -173,11 +173,27 @@ for (let el of modalMenu) {
 
 function tesTing() {
   console.log("atrevido");
-  if (divChild[0].style.display = "block") {
-    divChild[3].style.display = "block";
-    divChild[0].style.display = "none";
+  if (modalTwo.style.display = "none") {
+    modalTwo.style.display = "block";
+    modalOne.style.display = "none";
   }
   document.body.style.overflow = "hidden";
 }
 
 // MODALS TEST
+
+
+// TEST DE CLONAR NAVBAR 
+
+// quienesBtn.addEventListener('click', change);
+
+
+// function change() {
+//     const navBar = document.getElementById("navbar-container-id");
+//     const clone = navBar.cloneNode(true);
+//     let transForm = document.getElementById("navbar-id").appendChild(clone);
+    
+//     transForm.classList.remove('nav-container-2');
+// }
+
+// TEST DE CLONAR NAVBAR 
