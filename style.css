@@ -15,12 +15,12 @@
 
 ::-webkit-scrollbar-track {
   /* background: hsl(211 82% 11% / 1); */
-  background: hsl(220, 67%, 4%, 0.81);
+  background: hsla(219, 70%, 4%, 0.81);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsla(194, 66%, 44%, 0.782); 
+  background: hsla(194, 75%, 30%, 0.782); 
   border-radius: 100vw;
   /* border: .25em solid hsl(211 82% 11% / 1); */
 }
