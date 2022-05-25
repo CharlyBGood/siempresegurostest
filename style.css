@@ -438,7 +438,7 @@ h4.img-txt {
   display: block;  
   height: auto;
   left: 90%;
-  bottom: 0;
+  bottom: 5%;
   text-decoration: none;
   opacity: .9;
 }
@@ -1844,8 +1844,8 @@ textarea:focus::placeholder {
   /* MODAL CONTAINER FOUR */
 
   .wsp-link {
-    left: 82%;
-    bottom: 3%;
+    left: 86%;
+    bottom: 5%;
   }
 
   .wsp-icon {
