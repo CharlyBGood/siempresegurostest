@@ -9,6 +9,32 @@
   --goldenNew: #f7d16e;
 }
 
+::-webkit-scrollbar {
+  width: .7em;
+}
+
+::-webkit-scrollbar-track {
+  /* background: hsl(211 82% 11% / 1); */
+  background: hsl(220, 67%, 4%, 0.81);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(194, 66%, 44%, 0.782); 
+  border-radius: 100vw;
+  /* border: .25em solid hsl(211 82% 11% / 1); */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(210, 19%, 38%);
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: hsla(220 67% 4% 0.81 / 1) hsla(194, 66%, 44%, 0.782);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
