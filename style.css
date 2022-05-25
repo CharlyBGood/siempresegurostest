@@ -1516,8 +1516,7 @@ textarea:focus::placeholder {
 .footer-lightblue a {
   color: var(--bgrSolid);
   cursor: pointer;
-  /* margin: 1em auto; */
-  font-size: .9em;
+  font-size: 1em;
   text-decoration: none;
 }
 
@@ -1876,6 +1875,10 @@ textarea:focus::placeholder {
 
   .wsp-icon {
     width: 3.5em;
+  }
+
+  .footer-lightblue a {
+    font-size: .8em;
   }
 }
 
