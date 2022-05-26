@@ -487,7 +487,7 @@ h4.img-txt {
 
 /* MODAL ONE CONTAINER ONE */
 
-.modal-container {
+.modalOne {
   display: none;
   position: fixed;
   z-index: 1;
@@ -506,28 +506,6 @@ h4.img-txt {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
-}
-
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
 }
 
 .modal-content {
@@ -616,9 +594,9 @@ h4.img-txt {
   margin: .5em;
 }
 
-.modal-container p,
-.modal-container h2,
-.modal-container h3 {
+.modalOne p,
+.modalOne h2,
+.modalOne h3 {
   color: var(--blgray);
   text-align: left;
   font-size: 1.1em;
@@ -626,13 +604,13 @@ h4.img-txt {
   padding: .1em 0;
 }
 
-.modal-container h3 {
+.modalOne h3 {
   font-size: 1em;
   margin-bottom: 0;
   border-bottom: 1px solid var(--lightblue);
 }
 
-.modal-container h2 {
+.modalOne h2 {
   font-size: 1.5em;
   border-bottom: 1px solid var(--lightblue);
 }
@@ -807,27 +785,6 @@ h4.img-txt {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
-}
-
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
 }
 
 .modal-content-2 {
@@ -1158,27 +1115,6 @@ textarea:focus::placeholder {
   animation-duration: 0.4s;
 }
 
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
 .modalThree h1 {
   font-size: 1.5em;
   color: var(--bgrSolid);
@@ -1341,27 +1277,6 @@ textarea:focus::placeholder {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
-}
-
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
 }
 
 .modal-content-4 {
@@ -1527,6 +1442,27 @@ textarea:focus::placeholder {
   color: var(--letter-gray);
 }
 
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .hero {
     height: auto;
@@ -1688,7 +1624,7 @@ textarea:focus::placeholder {
   }
   /* MODAL ONE */
 
-  .modal-container {
+  .modalOne {
     width: 100%;
     right: 0;
   }
@@ -1816,13 +1752,13 @@ textarea:focus::placeholder {
     width: 35vw;
   }
 
-  .modal-container p {
+  .modalOne p {
     font-size: 1em;
   }
 
-  .modal-container p,
-  .modal-container h2,
-  .modal-container h3 {
+  .modalOne p,
+  .modalOne h2,
+  .modalOne h3 {
     
     text-align: center;
   }

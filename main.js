@@ -76,10 +76,17 @@ span1.onclick = function () {
   document.body.style.overflow = "auto";
 };
 
-quienesBtn.onclick = function () {
+quienesBtn.addEventListener('click', openOne);
+
+function openOne() {
   modalOne.style.display = "block";
   document.body.style.overflow = "hidden";
 };
+
+// quienesBtn.onclick = function () {
+//   modalOne.style.display = "block";
+//   document.body.style.overflow = "hidden";
+// };
 
 // MODAL ONE CONTAINER
 
@@ -96,10 +103,17 @@ span.onclick = function () {
   document.body.style.overflow = "auto";
 };
 
-segurosBtn.onclick = function () {
+segurosBtn.addEventListener('click', openTwo);
+
+function openTwo() {
   modalTwo.style.display = "block";
   document.body.style.overflow = "hidden";
 };
+
+// segurosBtn.onclick = function () {
+//   modalTwo.style.display = "block";
+//   document.body.style.overflow = "hidden";
+// };
 
 // MODAL TWO CONTAINER
 
@@ -116,10 +130,17 @@ span3.onclick = function () {
   document.body.style.overflow = "auto";
 };
 
-descargaBtn.onclick = function () {
+descargaBtn.addEventListener('click', openThree);
+
+function openThree() {
   modalThree.style.display = "block";
   document.body.style.overflow = "hidden";
 };
+
+// descargaBtn.onclick = function () {
+//   modalThree.style.display = "block";
+//   document.body.style.overflow = "hidden";
+// };
 
 // MODAL THREE CONTAINER
 
@@ -136,10 +157,17 @@ span4.onclick = function () {
   document.body.style.overflow = "auto";
 };
 
-contactoBtn.onclick = function () {
+contactoBtn.addEventListener('click', openFour);
+
+function openFour() {
   modalFour.style.display = "block";
   document.body.style.overflow = "hidden";
 };
+
+// contactoBtn.onclick = function () {
+//   modalFour.style.display = "block";
+//   document.body.style.overflow = "hidden";
+// };
 
 // close when click out of modal container
 
@@ -163,22 +191,36 @@ window.onclick = function (event) {
 
 let modalMenu = document.getElementsByClassName("modal-menu");
 
-let allModals = document.getElementById("allModals");
 
-let divChild = allModals.children;
+// for (let el of modalMenu) {
+  
+//   el.addEventListener("click", function(ev) {
+//     console.log("atrevido");
+    
+  
+//     // if (modalTwo.style.display = "none") {
+//     //   modalTwo.style.display = "block";
+//     //   modalOne.style.display = "none";
+//     // } 
+  
+//     document.body.style.overflow = "hidden";
+//   });
+// }
 
-for (let el of modalMenu) {
-  el.addEventListener("click", tesTing);
-}
+  // elTwo.addEventListener('click', function() {
+  //   openTwo();
+  //   modalOne.style.display = 'none';
+  // });
 
-function tesTing() {
-  console.log("atrevido");
-  if (modalTwo.style.display = "none") {
-    modalTwo.style.display = "block";
-    modalOne.style.display = "none";
-  }
-  document.body.style.overflow = "hidden";
-}
+  // elThree.addEventListener('click', function() {
+  //   openThree();
+  //   modalOne.style.display = 'none';
+  //   console.log('you did it')
+  // });
+
+  // elFour.addEventListener('click', function() {
+  //   openFour();
+  // });
 
 // MODALS TEST
 
@@ -197,3 +239,54 @@ function tesTing() {
 // }
 
 // TEST DE CLONAR NAVBAR 
+
+
+let linksNav = document.querySelectorAll('.modal-menu');
+
+linksNav[4].addEventListener('click', openModalOne);
+linksNav[8].addEventListener('click', openModalOne);
+linksNav[12].addEventListener('click', openModalOne);
+
+function openModalOne() {
+  console.log('funciona');
+  openOne();
+  modalTwo.style.display = 'none';
+  modalThree.style.display = 'none';
+  modalFour.style.display = 'none';
+}
+
+linksNav[1].addEventListener('click', openModalTwo);
+linksNav[9].addEventListener('click', openModalTwo);
+linksNav[13].addEventListener('click', openModalTwo);
+
+function openModalTwo() {
+  console.log('funciona 2');
+  openTwo();
+  modalOne.style.display = 'none';
+  modalThree.style.display = 'none';
+  modalFour.style.display = 'none';
+}
+
+linksNav[2].addEventListener('click', openModalThree);
+linksNav[6].addEventListener('click', openModalThree);
+linksNav[14].addEventListener('click', openModalThree);
+
+function openModalThree() {
+  console.log('funciona 3');
+  openThree();
+  modalOne.style.display = 'none';
+  modalTwo.style.display = 'none';
+  modalFour.style.display = 'none';
+}
+
+linksNav[3].addEventListener('click', openModalFour);
+linksNav[7].addEventListener('click', openModalFour);
+linksNav[11].addEventListener('click', openModalFour);
+
+function openModalFour() {
+  console.log('funciona 4');
+  openFour();
+  modalOne.style.display = 'none';
+  modalTwo.style.display = 'none';
+  modalThree.style.display = 'none';
+}
