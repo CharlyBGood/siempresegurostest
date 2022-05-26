@@ -196,49 +196,9 @@ let modalMenu = document.getElementsByClassName("modal-menu");
   
 //   el.addEventListener("click", function(ev) {
 //     console.log("atrevido");
-    
-  
-//     // if (modalTwo.style.display = "none") {
-//     //   modalTwo.style.display = "block";
-//     //   modalOne.style.display = "none";
-//     // } 
-  
-//     document.body.style.overflow = "hidden";
-//   });
 // }
-
-  // elTwo.addEventListener('click', function() {
-  //   openTwo();
-  //   modalOne.style.display = 'none';
-  // });
-
-  // elThree.addEventListener('click', function() {
-  //   openThree();
-  //   modalOne.style.display = 'none';
-  //   console.log('you did it')
-  // });
-
-  // elFour.addEventListener('click', function() {
-  //   openFour();
-  // });
 
 // MODALS TEST
-
-
-// TEST DE CLONAR NAVBAR 
-
-// quienesBtn.addEventListener('click', change);
-
-
-// function change() {
-//     const navBar = document.getElementById("navbar-container-id");
-//     const clone = navBar.cloneNode(true);
-//     let transForm = document.getElementById("navbar-id").appendChild(clone);
-    
-//     transForm.classList.remove('nav-container-2');
-// }
-
-// TEST DE CLONAR NAVBAR 
 
 
 let linksNav = document.querySelectorAll('.modal-menu');
