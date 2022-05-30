@@ -13,12 +13,6 @@ if (isset($send)) {
     $tel = $_POST['telefono'];
     $datos = $_POST['datos'];
 
-    $to = 'info@estarsiempreseguros.com.ar';
-    $to = 'estarsiempreseguros@gmail.com';
-    $subject = 'Enviado desde formulario del sitio web.';
-    $headers .= $email;
-    $content = $datos;
-
     $sql = "INSERT INTO seguros_form(Nombre, postalCod, Email, Tel, Datos) VALUES ('$name', '$postalCod','$email', '$tel', '$datos')";
 
     $result = mysqli_query($conex, $sql);
