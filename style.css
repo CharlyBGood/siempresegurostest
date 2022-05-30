@@ -1599,7 +1599,7 @@ textarea:focus::placeholder {
 
   .description-container {
     background: url("./img/black2.png") no-repeat center center fixed;
-    width: 90%;
+    /* width: 90%; */
     border-radius: .3em;
     display: -webkit-box;
     display: -ms-flexbox;
