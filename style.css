@@ -413,8 +413,7 @@ h4.img-txt {
 }
 
 .support-container h2 {
-  width: 35%;
-  margin-bottom: .2em;
+  margin-bottom: 1em;
 }
 
 .support-container b, .about-img-container b, .welcome-section b {  
@@ -442,7 +441,7 @@ h4.img-txt {
           -webkit-box-pack: space-evenly;
               -ms-flex-pack: space-evenly;
                   justify-content: space-evenly;
-  padding: .6em;
+  padding: .8em;
   align-items: center;
 }
 
@@ -458,8 +457,8 @@ h4.img-txt {
   text-align: center;
 }
 
-.footer-span a svg {
-  font-size: 1.5em;
+.footer-span svg {
+  font-size: 2em;
 }
 
 .wsp-link {
@@ -467,7 +466,7 @@ h4.img-txt {
   display: block;  
   height: auto;
   left: 90%;
-  bottom: 5%;
+  bottom: 7%;
   text-decoration: none;
   opacity: .9;
 }
@@ -1599,6 +1598,9 @@ textarea:focus::placeholder {
   }
 
   .description-container {
+    background: url("./img/black2.png") no-repeat center center fixed;
+    width: 90%;
+    border-radius: .3em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1814,7 +1816,6 @@ textarea:focus::placeholder {
 
   .wsp-link {
     left: 86%;
-    bottom: 5%;
   }
 
   .wsp-icon {
