@@ -903,6 +903,14 @@ h4.img-txt {
   text-align: center;
 }
 
+.form-control {
+  width: 100%;
+  border-radius: .3em;
+  margin: .3em;
+  /* padding: .2em; */
+  text-align: left;
+}
+
 .form-style input,
 textarea {
   background-color: transparent;  
@@ -936,6 +944,24 @@ textarea {
   padding: 0;
   margin: .5em;
   font-size: 1.2em;
+}
+
+.form-style .success input {
+  border-bottom: 1px solid green;
+}
+
+.form-style .error input {
+  border-bottom: 1px solid red;
+}
+
+.form-control small {
+  visibility: hidden;
+  color: red;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
 }
 
 ::-webkit-input-placeholder {

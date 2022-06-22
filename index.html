@@ -124,6 +124,7 @@
         <a class="arrow arrow-next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </header>
+    <noscript><h2 style="color: #d0dcf7; margin-top: 1em; font-size: 1.5em; text-align: center; background-color: #1e35bb;">Activa Javascript para que este sitio web funcione correctamente. ¡Gracias!</h2></noscript>
     <main class="welcome-section">
       <h2>¡Te damos la bienvenida!</h2>      
       <p>
@@ -262,15 +263,31 @@
               <h2><a class="blue-text">Maschio y Asoc.</a> te ofrece condiciones comerciales más beneficiosas...</h2>
             </div>
             <div class="modal-content-right form-style">            
-              <form action="contact.php" method="post">
-                <label>Consultanos</label>              
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" />
-                <input type="number" name="postal" id="postal" placeholder="Código Postal" />
-                <input type="email" name="email" id="email" placeholder="Email*" />
-                <input type="tel" name="telefono" id="telefono" placeholder="N° Teléfono" />
-                <textarea name="datos" id="datos" cols="21" rows="10" placeholder="Comentarios"></textarea
-                >
-                <input type="submit" name="enviar" value="Enviar" />
+              <form id="form" action="contact.php" method="post">
+                <label>Consultanos</label>  
+                <div class="form-control">
+                  <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" minlength="5" maxlength="60" required />
+                  <small></small>
+                </div>
+                <div class="form-control">
+                  <input type="number" name="postal" id="postal" placeholder="Código Postal" required />
+                  <small></small>
+                </div>
+                <div class="form-control">
+                  <input type="email" name="email" id="email" placeholder="Email*" required />
+                  <small></small>
+                </div>
+                <div class="form-control">
+                  <input type="tel" name="telefono" id="telefono" placeholder="N° Teléfono (sólo números)" min="0111" required />
+                  <small></small>
+                </div>
+                <div class="form-control">
+                  <textarea name="datos" id="datos" cols="21" rows="10" placeholder="Comentarios" minlength="5" maxlength="300" required ></textarea
+                    >
+                  <small></small>
+                  <input type="hidden" name="hidden" value="ok">
+                </div>                
+                <input id="submit-btn" type="submit" name="enviar" value="Enviar" />
               </form>
             </div>
           </div>
